@@ -319,9 +319,9 @@ footer p {
         display: block;
     }
 
-    .news .inner {
+    .news .inner ul {
         text-align: left;
-        margin: auto;
+        margin: 0 auto;
     }
 
 /* --------------------------------------------------------------
