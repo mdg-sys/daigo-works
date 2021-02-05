@@ -1,0 +1,39 @@
+/* --------------------------------------------------------------
+    メインビジュアル
+-------------------------------------------------------------- */
+
+.mainvisual {
+    background-image: url(../image/mathematics-1.jpg); /*画像を要素として使いたいならhtml <img>*/
+    background-size: cover;
+    background-position: 25% 75%;
+    position: relative;
+
+    h2 {
+        text-align: center;
+        color: #fff;
+        font-size: 42px;
+        font-weight: bold;
+        line-height: 2; /*行間隔*/ 
+        transform: translate(0, 0);
+        margin: 0 auto;
+        width: 90%;
+        padding: 50px 0;
+        /*jQuery起動時*/
+        opacity : 0;
+        transform: translateY(20px);
+        transition: all 1s;
+    }
+
+    &::before {
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: ' ';
+    }
+}
+
+/*擬似クラス(シングルコロン)：要素全体に影響*/
+/*疑似要素(ダブルコロン)：要素の１部分にのみ影響*/

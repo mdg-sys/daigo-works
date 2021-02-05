@@ -1,0 +1,37 @@
+/* --------------------------------------------------------------
+    ヘッダー
+-------------------------------------------------------------- */
+
+header {
+    height: 40px;
+    margin: 0;
+    background-color: #343a40;
+    font: #fff;
+
+    .inner { /*ポイント flexboxを使って横並びにする　floatは使わない*/
+        color: #fff;
+        display: flex;
+        justify-content: space-between; /*flex boxに対して使用することができる display: flex;*/
+        align-items: center; /*縦方向の中央揃え*/
+        padding: 0 20px;
+        height: 100%;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        margin: 0 20px;
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+#hoge {
+    width: 100%;
+}

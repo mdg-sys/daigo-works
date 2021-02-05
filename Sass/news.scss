@@ -1,0 +1,35 @@
+/* --------------------------------------------------------------
+    NEWS
+-------------------------------------------------------------- */
+
+.news {
+    
+    .inner {
+
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            text-align: left;
+            margin: 0 100px; /*レスポンシブで幅全部に修正しないといけない*/
+            margin-bottom: 80px;
+        }
+
+        li {
+            border-bottom: 1px solid #ccc; /*値：太さ　線種　色*/
+            padding: 5px 0;
+
+            display: flex;
+            justify-content: space-between;
+
+            .content {
+                text-align: left;
+            }
+        }
+    }
+
+    .sp_br {
+        display: none;
+    }
+}

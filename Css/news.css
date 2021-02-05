@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* --------------------------------------------------------------
+    NEWS
+-------------------------------------------------------------- */
+.news .inner h2 {
+  text-align: center;
+}
+
+.news .inner ul {
+  text-align: left;
+  margin: 0 100px;
+  /*レスポンシブで幅全部に修正しないといけない*/
+  margin-bottom: 80px;
+}
+
+.news .inner li {
+  border-bottom: 1px solid #ccc;
+  /*値：太さ　線種　色*/
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news .inner li .content {
+  text-align: left;
+}
+
+.news .sp_br {
+  display: none;
+}
+/*# sourceMappingURL=news.css.map */

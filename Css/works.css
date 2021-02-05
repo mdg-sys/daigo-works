@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* --------------------------------------------------------------
+    WORKS
+-------------------------------------------------------------- */
+.works {
+  background-color: #e2e4e4;
+}
+
+.works .works-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works .works-card-wrapper:last-child {
+  /*擬似クラス last-child は兄弟要素の中で最後のセレクタに対して付与する操作*/
+  margin-top: 30px;
+}
+
+.work-card {
+  width: 30%;
+  margin: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+  /*値：Offset-X Offset-Y blur-radius color*/
+}
+
+.work-card img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  /*値の種類：fill, contain, cover, none, scale-down*/
+}
+
+.work-card h3 {
+  padding: 10px;
+}
+/*# sourceMappingURL=works.css.map */
