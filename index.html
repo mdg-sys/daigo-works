@@ -59,21 +59,6 @@
                 </ul>
             </nav>
 
-            <script>
-                $("#menu").click(function() {
-                    $("#mask").css("display", "block");
-                    $("#side-menu").css("display", "block");
-                    $("#menu").css("display", "none");
-                    $("#close").css("display", "block");
-                });
-
-                $("#close").click(function() {
-                    $("#mask").css("display", "none");
-                    $("#menu").css("display", "block");
-                    $("#close").css("display", "none");
-                })
-            </script>
-
         </div>
     </header>
 
@@ -104,6 +89,35 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
+
+        <script>
+            $("#menu").click(function() {
+                $("#mask").css("display", "block");
+                $("#side-menu").css("display", "block");
+
+                // スイッチャ
+                $("#menu").css("display", "none");
+                $("#close").css("display", "block");
+            });
+
+            $("#close").click(function() {
+                $("#mask").css("display", "none");
+                $("#side-menu").css("display", "none");
+
+                // スイッチャ
+                $("#menu").css("display", "block");
+                $("#close").css("display", "none");
+            });
+
+            $("a").click(function() {
+                $("#side-menu").css("display", "none");
+                $("#mask").css("display", "none");
+
+                // スイッチャ
+                $("#menu").css("display", "block");
+                $("#close").css("display", "none");
+            });
+        </script>
 
     </section>
 
@@ -226,7 +240,6 @@
         <p><small>©2021 For My Life</small></p>
     </footer>
     </div>
-
-    <script src="Js/main.js"></script>
+    
 </body>
 </html>

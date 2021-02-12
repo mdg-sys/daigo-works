@@ -5,6 +5,8 @@
 @import "response.scss";
 
 header {
+    position: relative;
+    z-index: 2;
     height: 40px;
     margin: 0;
     background-color: #343a40;
@@ -54,5 +56,6 @@ header {
     .fa-times {
         display: none;
         z-index: 2;
+        transition: all 0.5s;
     }
 }

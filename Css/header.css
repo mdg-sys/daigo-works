@@ -3,6 +3,8 @@
     ヘッダー
 -------------------------------------------------------------- */
 header {
+  position: relative;
+  z-index: 2;
   height: 40px;
   margin: 0;
   background-color: #343a40;
@@ -72,5 +74,7 @@ header .fa-bars {
 header .fa-times {
   display: none;
   z-index: 2;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 /*# sourceMappingURL=header.css.map */
