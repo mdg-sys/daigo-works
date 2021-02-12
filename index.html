@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>フリーランス研究者のWebサイト</title>
+
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="Css/header.css">
     <link rel="stylesheet" href="Css/mainvisual.css">
@@ -68,7 +69,7 @@
 
     <section class = "mainvisual">
         <div class="inner">
-                <h2>科学とは何か<br><span>〜未来を切り拓く人類最強の武器〜</span></h2>
+                <h2>科学とは何か<br><span>〜宇宙が作り出した芸術〜</span></h2>
         </div>
 
         <script>
@@ -93,7 +94,7 @@
         <script>
             $("#menu").click(function() {
                 $("#mask").css("display", "block");
-                $("#side-menu").css("display", "block");
+                $("#side-menu").slideDown();
 
                 // スイッチャ
                 $("#menu").css("display", "none");
@@ -102,7 +103,7 @@
 
             $("#close").click(function() {
                 $("#mask").css("display", "none");
-                $("#side-menu").css("display", "none");
+                $("#side-menu").slideUp();
 
                 // スイッチャ
                 $("#menu").css("display", "block");
@@ -110,7 +111,7 @@
             });
 
             $("a").click(function() {
-                $("#side-menu").css("display", "none");
+                $("#side-menu").slideUp();
                 $("#mask").css("display", "none");
 
                 // スイッチャ
@@ -130,9 +131,21 @@
         <div class = "inner">
             <h2>ABOUT</h2>
             <div class = "line"></div>
-            <p>
+            <p><i><b>
+                「重要なのは、疑問を持ち続けること。知的好奇心は、
                 
+                それ自体に存在意義があるものだ。（ Alvert Einstein ）」<br>
+            </b></i>
                 
+            <br>
+                
+                答えを求めて、自分で道を拓くことを忘れてはないか…<br>
+
+                ここは、自然界の不思議に熱き思いを持つものが集まる場所。<br>
+
+                そして、オンライン上にひっそりと佇む研究所。<br>
+
+                興味をもった方は、ぜひ当研究所のドアをノックしてみてください。<br>
             </p>
         </div>
     </section>
@@ -240,6 +253,6 @@
         <p><small>©2021 For My Life</small></p>
     </footer>
     </div>
-    
+
 </body>
 </html>

@@ -7,13 +7,13 @@
 .about {
     background-color: #e2e4e4;
 
-    p {
-        line-height: 2.5;
-    }
+        p {
+           line-height: 2.5;
 
-    span {
-        color: red;
-    }
+           @include mq ($sp) {
+               text-align: left;
+            }
+        } 
 
     .sp_br {
         @include mq ($sp) {
