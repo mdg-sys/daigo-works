@@ -2,6 +2,8 @@
     ヘッダー
 -------------------------------------------------------------- */
 
+@import "response.scss";
+
 header {
     height: 40px;
     margin: 0;
@@ -19,19 +21,38 @@ header {
         margin: 0 auto;
     }
 
-    ul {
-        display: flex;
-    }
+    nav {
+        ul {
+            display: flex;
+        }
+    
+        li {
+            margin: 0 20px;
+    
+            a {
+                color: #fff;
 
-    li {
-        margin: 0 20px;
+                @include mq ($tab) {
+                    font-size: 15px;
+                }
+            }
+        }
 
-        a {
-            color: #fff;
+        @include mq ($sp) {
+            display: none;
         }
     }
-}
 
-#hoge {
-    width: 100%;
+    .fa-bars {
+        display: none;
+
+        @include mq ($sp) {
+            display: block;
+        }
+    }
+
+    .fa-times {
+        display: none;
+        z-index: 2;
+    }
 }

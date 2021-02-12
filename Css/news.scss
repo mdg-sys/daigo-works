@@ -2,6 +2,8 @@
     NEWS
 -------------------------------------------------------------- */
 
+@import "response.scss";
+
 .news {
     
     .inner {
@@ -14,6 +16,11 @@
             text-align: left;
             margin: 0 100px; /*レスポンシブで幅全部に修正しないといけない*/
             margin-bottom: 80px;
+
+            @include mq ($sp) {
+                text-align: left;
+                margin: 0 auto;
+            }
         }
 
         li {
@@ -31,5 +38,9 @@
 
     .sp_br {
         display: none;
+
+        @include mq ($sp) {
+            display: block;
+        }
     }
 }

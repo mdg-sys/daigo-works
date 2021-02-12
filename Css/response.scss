@@ -1,0 +1,10 @@
+$sp: 670px;
+$tab: 1000px;
+
+@mixin mq($breakPoint) {
+
+    @media (max-width: $breakPoint) {
+
+        @content;
+    }
+}

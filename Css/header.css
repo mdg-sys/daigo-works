@@ -12,10 +12,19 @@ header {
 header .inner {
   /*ポイント flexboxを使って横並びにする　floatは使わない*/
   color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /*flex boxに対して使用することができる display: flex;*/
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   /*縦方向の中央揃え*/
   padding: 0 20px;
   height: 100%;
@@ -23,19 +32,45 @@ header .inner {
   margin: 0 auto;
 }
 
-header ul {
+header nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
-header li {
+header nav li {
   margin: 0 20px;
 }
 
-header li a {
+header nav li a {
   color: #fff;
 }
 
-#hoge {
-  width: 100%;
+@media (max-width: 1000px) {
+  header nav li a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 670px) {
+  header nav {
+    display: none;
+  }
+}
+
+header .fa-bars {
+  display: none;
+}
+
+@media (max-width: 670px) {
+  header .fa-bars {
+    display: block;
+  }
+}
+
+header .fa-times {
+  display: none;
+  z-index: 2;
 }
 /*# sourceMappingURL=header.css.map */

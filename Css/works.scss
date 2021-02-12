@@ -2,6 +2,8 @@
     WORKS
 -------------------------------------------------------------- */
 
+@import "response.scss";
+
 .works {
     background-color: #e2e4e4;
 
@@ -9,18 +11,29 @@
         display: flex;
         justify-content: space-between;
 
+        @include mq ($sp) {
+            display: block !important;
+        }
+
         &:last-child { /*擬似クラス last-child は兄弟要素の中で最後のセレクタに対して付与する操作*/
             margin-top: 30px;
         }
     }
-
-
 }
 
 .work-card {
     width: 30%;
     margin: 5px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.7); /*値：Offset-X Offset-Y blur-radius color*/
+
+    @include mq ($tab) {
+        width: 50%;
+    }
+
+    @include mq ($sp) {
+        width: 100%;
+        margin: 20px 0;
+    }
 
     img {
         height: 150px;

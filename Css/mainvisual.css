@@ -10,6 +10,12 @@
   position: relative;
 }
 
+@media (max-width: 670px) {
+  .mainvisual .inner {
+    padding: 0;
+  }
+}
+
 .mainvisual h2 {
   text-align: center;
   color: #fff;
@@ -17,14 +23,23 @@
   font-weight: bold;
   line-height: 2;
   /*行間隔*/
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
   margin: 0 auto;
   width: 90%;
   padding: 50px 0;
   /*jQuery起動時*/
   opacity: 0;
-  transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+@media (max-width: 670px) {
+  .mainvisual h2 {
+    font-size: 20px;
+  }
 }
 
 .mainvisual::before {
@@ -35,6 +50,48 @@
   bottom: 0;
   left: 0;
   content: ' ';
+}
+
+@media (max-width: 1000px) {
+  .mainvisual .span {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 670px) {
+  .mainvisual .span {
+    font-size: 18px;
+  }
+}
+
+#mask {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#side-menu {
+  display: none;
+  z-index: 2;
+  background-color: #343a40;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#side-menu li a {
+  display: inline-block;
+  color: white;
+  margin: 10px 50px;
+}
+
+#side-menu li:last-child {
+  margin-bottom: 30px;
 }
 
 /*擬似クラス(シングルコロン)：要素全体に影響*/

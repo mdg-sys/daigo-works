@@ -34,6 +34,12 @@ h2 {
   text-align: center;
 }
 
+@media (max-width: 670px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
 h3 {
   font-size: 18px;
   text-align: center;
@@ -57,6 +63,8 @@ a {
 a:hover {
   opacity: 0.7;
   /*opacity: 不透明度*/
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 ul {
@@ -90,7 +98,9 @@ li {
 .fadein {
   /*jQuery用*/
   opacity: 0;
-  transform: translateY(20px);
+  -webkit-transform: translateY(20px) !important;
+          transform: translateY(20px) !important;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 /*# sourceMappingURL=style.css.map */

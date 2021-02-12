@@ -2,6 +2,68 @@
 /* --------------------------------------------------------------
     NEWS
 -------------------------------------------------------------- */
+@media (max-width: 1000px) {
+  /* --------------------------------------------------------------
+        ヘッダー
+    -------------------------------------------------------------- */
+  header ul {
+    display: none;
+  }
+  /* --------------------------------------------------------------
+        メインビジュアル
+    -------------------------------------------------------------- */
+  .mainvisual span {
+    font-size: 32px;
+  }
+  /* --------------------------------------------------------------
+        WORKS
+    -------------------------------------------------------------- */
+  .work-card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 670px) {
+  /* --------------------------------------------------------------
+        メインビジュアル
+    -------------------------------------------------------------- */
+  .mainvisual .inner {
+    padding: 0;
+  }
+  .mainvisual h2 {
+    font-size: 20px;
+  }
+  .mainvisual span {
+    font-size: 18px;
+  }
+  /* --------------------------------------------------------------
+        ABOUT
+    -------------------------------------------------------------- */
+  .about .sp_br {
+    display: none;
+  }
+  /* --------------------------------------------------------------
+        NEWS
+    -------------------------------------------------------------- */
+  .news .sp_br {
+    display: block;
+  }
+  .news .inner ul {
+    text-align: left;
+    margin: 0 auto;
+  }
+  /* --------------------------------------------------------------
+        WORKS
+    -------------------------------------------------------------- */
+  .works-card-wrapper {
+    display: block !important;
+  }
+  .work-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
 .news .inner h2 {
   text-align: center;
 }
@@ -13,12 +75,25 @@
   margin-bottom: 80px;
 }
 
+@media (max-width: 670px) {
+  .news .inner ul {
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
 .news .inner li {
   border-bottom: 1px solid #ccc;
   /*値：太さ　線種　色*/
   padding: 5px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .news .inner li .content {
@@ -27,5 +102,11 @@
 
 .news .sp_br {
   display: none;
+}
+
+@media (max-width: 670px) {
+  .news .sp_br {
+    display: block;
+  }
 }
 /*# sourceMappingURL=news.css.map */

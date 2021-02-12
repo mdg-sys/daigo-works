@@ -2,6 +2,8 @@
     ABOUT
 -------------------------------------------------------------- */
 
+@import "response.scss";
+
 .about {
     background-color: #e2e4e4;
 
@@ -11,5 +13,11 @@
 
     span {
         color: red;
+    }
+
+    .sp_br {
+        @include mq ($sp) {
+            display: none;
+        }
     }
 }

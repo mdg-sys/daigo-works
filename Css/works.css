@@ -2,13 +2,87 @@
 /* --------------------------------------------------------------
     WORKS
 -------------------------------------------------------------- */
+@media (max-width: 1000px) {
+  /* --------------------------------------------------------------
+        ヘッダー
+    -------------------------------------------------------------- */
+  header ul {
+    display: none;
+  }
+  /* --------------------------------------------------------------
+        メインビジュアル
+    -------------------------------------------------------------- */
+  .mainvisual span {
+    font-size: 32px;
+  }
+  /* --------------------------------------------------------------
+        WORKS
+    -------------------------------------------------------------- */
+  .work-card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 670px) {
+  /* --------------------------------------------------------------
+        メインビジュアル
+    -------------------------------------------------------------- */
+  .mainvisual .inner {
+    padding: 0;
+  }
+  .mainvisual h2 {
+    font-size: 20px;
+  }
+  .mainvisual span {
+    font-size: 18px;
+  }
+  /* --------------------------------------------------------------
+        ABOUT
+    -------------------------------------------------------------- */
+  .about .sp_br {
+    display: none;
+  }
+  /* --------------------------------------------------------------
+        NEWS
+    -------------------------------------------------------------- */
+  .news .sp_br {
+    display: block;
+  }
+  .news .inner ul {
+    text-align: left;
+    margin: 0 auto;
+  }
+  /* --------------------------------------------------------------
+        WORKS
+    -------------------------------------------------------------- */
+  .works-card-wrapper {
+    display: block !important;
+  }
+  .work-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
 .works {
   background-color: #e2e4e4;
 }
 
 .works .works-card-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 670px) {
+  .works .works-card-wrapper {
+    display: block !important;
+  }
 }
 
 .works .works-card-wrapper:last-child {
@@ -19,14 +93,29 @@
 .work-card {
   width: 30%;
   margin: 5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
   /*値：Offset-X Offset-Y blur-radius color*/
+}
+
+@media (max-width: 1000px) {
+  .work-card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 670px) {
+  .work-card {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
 
 .work-card img {
   height: 150px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   /*値の種類：fill, contain, cover, none, scale-down*/
 }
 
