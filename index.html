@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>フリーランス研究者のWebサイト</title>
+    <title>フリーランス研究者のサイト</title>
 
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="Css/header.css">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="Css/works.css">
     <link rel="stylesheet" href="Css/footer.css">
     <link rel="stylesheet" href="Css/response.css">
+    <link rel="stylesheet" href="Css/access.css">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -55,7 +56,7 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#news">NEWS</a></li>
                     <li><a href="#works">WORKS</a></li>
-                    <li><a href="#">ACCESS</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
@@ -86,12 +87,13 @@
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#news">NEWS</a></li>
                 <li><a href="#works">WORKS</a></li>
-                <li><a href="#">ACCESS</a></li>
+                <li><a href="#access">ACCESS</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
 
         <script>
+            // メニューバークリック時
             $("#menu").click(function() {
                 $("#mask").css("display", "block");
                 $("#side-menu").slideDown();
@@ -101,6 +103,7 @@
                 $("#close").css("display", "block");
             });
 
+            // 閉じるボタンクリック時
             $("#close").click(function() {
                 $("#mask").css("display", "none");
                 $("#side-menu").slideUp();
@@ -110,6 +113,7 @@
                 $("#close").css("display", "none");
             });
 
+            // 項目クリック時
             $("a").click(function() {
                 $("#side-menu").slideUp();
                 $("#mask").css("display", "none");
@@ -143,7 +147,7 @@
 
                 ここは、自然界の不思議に熱き思いを持つものが集まる場所。<br>
 
-                そして、オンライン上にひっそりと佇む研究所。<br>
+                そして、オンライン上にひっそりと佇む<span>研究所</span>。<br>
 
                 興味をもった方は、ぜひ当研究所のドアをノックしてみてください。<br>
             </p>
@@ -178,10 +182,10 @@
                 </li>
                 <li>
                     <div class="date">
-                        <p></p>
+                        <p>2021.2.12</p>
                     </div>
                     <div class="content">
-                        <p></p>
+                        <p>内容更新</p>
                     </div>
                 </li>
 
@@ -245,6 +249,42 @@
         </div>
     </section>
 
+    <!---------------------------------------------------
+        ACCESS
+    --------------------------------------------------->
+
+    <a name = "access"></a>
+    <section class="access">
+        <div class="inner">
+            <h2>ACCESS</h2>
+            <div class="line"></div>
+            <div class="access-container">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16124.617939752558!2d133.91492367089938!3d34.65751434899138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554064c3de389d3%3A0xa2d703aa2239cf57!2z5bKh5bGx6aeF!5e0!3m2!1sja!2sjp!4v1613112865744!5m2!1sja!2sjp"></iframe>
+                </div>
+                <div class="address">
+                    <div class="txt-box">
+                        <h3>研究所の入り口</h3>
+                        <div class="line" style="width: 100%;"></div>
+                        <!--TEL-->
+                        <p>TEL : 000-0000-000</p>
+                        <br>
+                        <!--Address-->
+                        <p>〒012-3456</p>
+                        <p>岡山県岡山市北区元町0-0-0</p>
+                        <br>
+                        <p>最寄り駅(岡山駅)から徒歩5分</p>
+                        <p>営業時間：9:00~18:00</p>
+                        <p>定休日：火曜日</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------
+        CONTACT
+    --------------------------------------------------->
     <!---------------------------------------------------
         フッター
     --------------------------------------------------->

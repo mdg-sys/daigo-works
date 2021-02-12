@@ -5,6 +5,13 @@
   background-color: #e2e4e4;
 }
 
+@media (max-width: 670px) {
+  .about .inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .about p {
   line-height: 2.5;
 }
@@ -13,6 +20,10 @@
   .about p {
     text-align: left;
   }
+}
+
+.about span {
+  color: red;
 }
 
 @media (max-width: 670px) {

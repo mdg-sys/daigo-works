@@ -2,6 +2,13 @@
 /* --------------------------------------------------------------
     NEWS
 -------------------------------------------------------------- */
+@media (max-width: 670px) {
+  .news .inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .news .inner h2 {
   text-align: center;
 }
@@ -32,6 +39,12 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 670px) {
+  .news .inner li {
+    display: block;
+  }
 }
 
 .news .inner li .content {
