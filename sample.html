@@ -1,0 +1,1360 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
+    <script>
+    WebFontConfig = {
+        google: {
+            families: ["Quicksand:500,700"]
+        }
+    };
+    if (typeof WebFont === "object" && typeof WebFont.load === "function") {
+        WebFont.load(WebFontConfig);
+    }
+    </script>
+    <script id="litespeed-webfont-lib" src="https://heysho.com/wp-content/plugins/litespeed-cache/assets/js/webfontloader.min.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,viewport-fit=cover"/>
+    <meta name="msapplication-TileColor" content="#516c9d">
+    <meta name="theme-color" content="#516c9d">
+    <link rel="pingback" href="https://heysho.com/xmlrpc.php">
+    <title>HTML5でSEO強化へ！要素タグsection, article, mainの使い方 | Heysho</title>
+    <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+    <link rel='dns-prefetch' href='//use.fontawesome.com'/>
+    <link rel='dns-prefetch' href='//s.w.org'/>
+    <link rel="alternate" type="application/rss+xml" title="Heysho &raquo; フィード" href="https://heysho.com/feed/"/>
+    <link rel="alternate" type="application/rss+xml" title="Heysho &raquo; コメントフィード" href="https://heysho.com/comments/feed/"/>
+    <link data-optimized="1" rel='stylesheet' id='sng-stylesheet-css' href='https://heysho.com/wp-content/litespeed/cssjs/0f85a.css?55f4a' type='text/css' media='all'/>
+    <link data-optimized="1" rel='stylesheet' id='sng-option-css' href='https://heysho.com/wp-content/litespeed/cssjs/d31d2.css?75933' type='text/css' media='all'/>
+    <link rel='stylesheet' id='sng-fontawesome-css' href='https://use.fontawesome.com/releases/v5.11.2/css/all.css' type='text/css' media='all'/>
+    <link data-optimized="1" rel='stylesheet' id='avatar-manager-css' href='https://heysho.com/wp-content/litespeed/cssjs/8936b.css?06356' type='text/css' media='all'/>
+    <link data-optimized="1" rel='stylesheet' id='contact-form-7-css' href='https://heysho.com/wp-content/litespeed/cssjs/1d167.css?b8f4e' type='text/css' media='all'/>
+    <link data-optimized="1" rel='stylesheet' id='child-style-css' href='https://heysho.com/wp-content/litespeed/cssjs/12ed3.css?762d5' type='text/css' media='all'/>
+    <script type='text/javascript' src='https://heysho.com/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+    <script type='text/javascript' id='eio-lazy-load-js-extra'>
+    /*  */
+    var eio_lazy_vars = {
+        "exactdn_domain": "",
+        "skip_autoscale": "0"
+    };
+    /*  */
+    </script>
+    <link rel="https://api.w.org/" href="https://heysho.com/wp-json/"/>
+    <link rel="alternate" type="application/json" href="https://heysho.com/wp-json/wp/v2/posts/342"/>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://heysho.com/xmlrpc.php?rsd"/>
+    <link rel="canonical" href="https://heysho.com/html5/"/>
+    <link rel='shortlink' href='https://heysho.com/?p=342'/>
+    <link rel="alternate" type="application/json+oembed" href="https://heysho.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fheysho.com%2Fhtml5%2F"/>
+    <link rel="alternate" type="text/xml+oembed" href="https://heysho.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fheysho.com%2Fhtml5%2F&#038;format=xml"/>
+    <link rel="alternate" href="https://heysho.com/en/seo-html/" hreflang="en"/>
+    <meta name="description" content="コーディング初心者やテクニカルSEO担当のために、SEOに強いHTML5でのコーディング方法について詳しく解説します。概要説明、メリット、実際のサイトのサンプルなどもお見せします。"/>
+    <meta property="og:title" content="HTML5でSEO強化へ！要素タグsection, article, mainの使い方"/>
+    <meta property="og:description" content="コーディング初心者やテクニカルSEO担当のために、SEOに強いHTML5でのコーディング方法について詳しく解説します。概要説明、メリット、実際のサイトのサンプルなどもお見せします。"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://heysho.com/html5/"/>
+    <meta property="og:image" content="https://heysho.com/wp-content/uploads/2017/12/html.jpg"/>
+    <meta name="thumbnail" content="https://heysho.com/wp-content/uploads/2017/12/html.jpg"/>
+    <meta property="og:site_name" content="Heysho"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+            new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M26TVCJ');
+    </script>
+    <script>
+    document.addEventListener('wpcf7mailsent', function(event) {
+        ga('send', 'event', 'Contact Form', 'submit');
+    }, false);
+    </script>
+    <noscript>
+        <style>
+        .lazyload[data-src] {
+            display: none !important;
+        }
+        </style>
+    </noscript>
+    <style>
+    .lazyload {
+        background-image: none !important;
+    }
+    </style>
+    <style type="text/css">
+    .broken_link, a.broken_link {
+        text-decoration: line-through;
+    }
+    </style>
+    <link rel="icon" href="https://heysho.com/wp-content/uploads/2019/08/heyshoworldwide-125x125.jpg" sizes="32x32"/>
+    <link rel="icon" href="https://heysho.com/wp-content/uploads/2019/08/heyshoworldwide-300x300.jpg" sizes="192x192"/>
+    <link rel="apple-touch-icon" href="https://heysho.com/wp-content/uploads/2019/08/heyshoworldwide-300x300.jpg"/>
+    <meta name="msapplication-TileImage" content="https://heysho.com/wp-content/uploads/2019/08/heyshoworldwide-300x300.jpg"/>
+    <style type="text/css" id="wp-custom-css">
+    /* ヘッダー画像に黒のレイヤーを透過 */
+    .header-image {
+        background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/wp-content/uploads/2021/02/heysho.com-header.jpg) !important;
+    }
+    </style>
+    <style>
+    a {
+        color:#0073aa
+    }
+
+    .main-c, .has-sango-main-color {
+        color:#516c9d
+    }
+
+    .main-bc, .has-sango-main-background-color {
+        background-color:#516c9d
+    }
+
+    .main-bdr, #inner-content .main-bdr {
+        border-color:#516c9d
+    }
+
+    .pastel-c, .has-sango-pastel-color {
+        color:#dedede
+    }
+
+    .pastel-bc, .has-sango-pastel-background-color, #inner-content .pastel-bc {
+        background-color:#dedede
+    }
+
+    .accent-c, .has-sango-accent-color {
+        color:#eb8686
+    }
+
+    .accent-bc, .has-sango-accent-background-color {
+        background-color:#eb8686
+    }
+
+    .header, #footer-menu, .drawer__title {
+        background-color:#ffffff
+    }
+
+    #logo a {
+        color:#516c9d
+    }
+
+    .desktop-nav li a, .mobile-nav li a, #footer-menu a, #drawer__open, .header-search__open, .copyright, .drawer__title {
+        color:#516c9d
+    }
+
+    .drawer__title .close span, .drawer__title .close span:before {
+        background:#516c9d
+    }
+
+    .desktop-nav li:after {
+        background:#516c9d
+    }
+
+    .mobile-nav .current-menu-item {
+        border-bottom-color:#516c9d
+    }
+
+    .widgettitle {
+        color: #516c9d;
+        background-color:#dedede
+    }
+
+    .footer {
+        background-color:#e0e4eb
+    }
+
+    .footer, .footer a, .footer .widget ul li a {
+        color:#3c3c3c
+    }
+
+    #toc_container .toc_title, .entry-content .ez-toc-title-container, #footer_menu .raised, .pagination a, .pagination span, #reply-title:before, .entry-content blockquote:before, .main-c-before li:before, .main-c-b:before {
+        color:#516c9d
+    }
+
+    .searchform__submit, #toc_container .toc_title:before, .ez-toc-title-container:before, .cat-name, .pre_tag > span, .pagination .current, .post-page-numbers.current, #submit, .withtag_list > span, .main-bc-before li:before {
+        background-color:#516c9d
+    }
+
+    #toc_container, #ez-toc-container, .entry-content h3, .li-mainbdr ul, .li-mainbdr ol {
+        border-color:#516c9d
+    }
+
+    .search-title i, .acc-bc-before li:before {
+        background:#eb8686
+    }
+
+    .li-accentbdr ul, .li-accentbdr ol {
+        border-color:#eb8686
+    }
+
+    .pagination a:hover, .li-pastelbc ul, .li-pastelbc ol {
+        background:#dedede
+    }
+
+    body {
+        font-size:100%
+    }
+
+    @media only screen and (min-width: 481px) {
+        body {
+            font-size:107%
+        }
+    }
+
+    @media only screen and (min-width: 1030px) {
+        body {
+            font-size:107%
+        }
+    }
+
+    .totop {
+        background:#5ba9f7
+    }
+
+    .header-info a {
+        color: #FFF;
+        background:linear-gradient(95deg, #738bff, #85e3ec)
+    }
+
+    .fixed-menu ul {
+        background:#FFF
+    }
+
+    .fixed-menu a {
+        color:#a2a7ab
+    }
+
+    .fixed-menu .current-menu-item a, .fixed-menu ul li a.active {
+        color:#6bb6ff
+    }
+
+    .post-tab {
+        background:#FFF
+    }
+
+    .post-tab > div {
+        color:#a7a7a7
+    }
+
+    .post-tab > div.tab-active {
+        background:linear-gradient(45deg, #bdb9ff, #67b8ff)
+    }
+
+    body {
+        font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", YuGothic, "Yu Gothic", "メイリオ", Meiryo, sans-serif;
+    }
+
+    .dfont {
+        font-family: "Quicksand", "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", YuGothic, "Yu Gothic", "メイリオ", Meiryo, sans-serif;
+    }
+    </style>
+</head>
+<body data-rsssl=1 class="post-template-default single single-post postid-342 single-format-standard fa5">
+    <noscript>
+        <iframe data-lazyloaded="1" src="about:blank" data-src="https://www.googletagmanager.com/ns.html?id=GTM-M26TVCJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M26TVCJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+    </noscript>
+    <div id="container" class="lazyload">
+        <header class="header">
+            <div id="inner-header" class="wrap cf lazyload">
+                <div id="logo" class="header-logo h1 dfont lazyload">
+                    <a href="https://heysho.com" class="header-logo__link">
+                    Heysho    </a>
+                </div>
+                <div class="header-search lazyload">
+                    <input type="checkbox" class="header-search__input" id="header-search-input" onclick="document.querySelector('.header-search__modal .searchform__input').focus()">
+                    <label class="header-search__close" for="header-search-input"></label>
+                    <div class="header-search__modal lazyload">
+                        <form role="search" method="get" id="searchform" class="searchform" action="https://heysho.com/">
+                            <div>
+                                <input type="search" id="s" class="searchform__input" name="s" value="" placeholder="検索"/>
+                                <button type="submit" id="searchsubmit" class="searchform__submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <nav class="desktop-nav clearfix">
+                    <ul id="menu-%e3%82%b0%e3%83%ad%e3%83%bc%e3%83%90%e3%83%ab%e3%83%8a%e3%83%93" class="menu">
+                        <li id="menu-item-565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-565">
+                            <a href="https://heysho.com/profile/">
+                                <i class="far fa-id-badge"></i>
+                                 プロフィール
+                            </a>
+                        </li>
+                        <li id="menu-item-3311" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-3311">
+                            <a href="https://heysho.com/blog/">
+                                <i class="fa fa-list-ul"></i>
+                                ブログ
+                            </a>
+                        </li>
+                        <li id="menu-item-566" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-566">
+                            <a href="https://heysho.com/contact/">
+                                <i class="far fa-envelope"></i>
+                                 問い合わせ
+                            </a>
+                        </li>
+                        <li id="menu-item-1142" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1142">
+                            <a href="/en/">
+                                <i class="fas fa-language"></i>
+                                 English
+                            </a>
+                        </li>
+                        <li id="menu-item-964" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-964">
+                            <a href="#sng_search">
+                                <label for="header-search-input">
+                                    <i class="fa fa-search"></i>
+                                </label>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="header-info  lazyload">
+            <a href="https://webschool.jp">
+            うぇぶすくーるJP(Webマーケティング勉強会)の参加者募集中    </a>
+        </div>
+        <div id="content" class="lazyload">
+            <div id="inner-content" class="wrap cf lazyload">
+                <main id="main" class="m-all t-2of3 d-5of7 cf">
+                    <article id="entry" class="cf post-342 post type-post status-publish format-standard has-post-thumbnail category-category-seo category-technical-seo tag-blog">
+                        <header class="article-header entry-header">
+                            <nav id="breadcrumb" class="breadcrumb">
+                                <ul itemscope itemtype="http://schema.org/BreadcrumbList">
+                                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                        <a href="https://heysho.com" itemprop="item">
+                                            <span itemprop="name">ホーム</span>
+                                        </a>
+                                        <meta itemprop="position" content="1"/>
+                                    </li>
+                                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                        <a href="https://heysho.com/category-seo/" itemprop="item">
+                                            <span itemprop="name">SEO</span>
+                                        </a>
+                                        <meta itemprop="position" content="2"/>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <h1 class="entry-title single-title">HTML5でSEO強化へ！要素タグsection, article, mainの使い方</h1>
+                            <div class="entry-meta vcard lazyload">
+                                <time class="pubdate entry-time" itemprop="datePublished" datetime="2019-08-31">8月 31, 2019</time>
+                                <time class="updated entry-time" itemprop="dateModified" datetime="2021-01-17">1月 17, 2021</time>
+                            </div>
+                            <p class="post-thumbnail">
+                                <img width="640" height="360" src="https://heysho.com/wp-content/ewww/lazy/placeholder-640x360.png" class="attachment-thumb-940 size-thumb-940 wp-post-image lazyload" alt="" data-src="https://heysho.com/wp-content/uploads/2017/12/html.jpg" loading="lazy" data-srcset="https://heysho.com/wp-content/uploads/2017/12/html.jpg 640w, https://heysho.com/wp-content/uploads/2017/12/html-300x169.jpg 300w" data-sizes="auto"/>
+                                <noscript>
+                                    <img width="640" height="360" src="https://heysho.com/wp-content/uploads/2017/12/html.jpg" class="attachment-thumb-940 size-thumb-940 wp-post-image" alt="" srcset="https://heysho.com/wp-content/uploads/2017/12/html.jpg 640w, https://heysho.com/wp-content/uploads/2017/12/html-300x169.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" data-eio="l"/>
+                                </noscript>
+                            </p>
+                            <div class="sns-btn lazyload">
+                                <ul>
+                                    <li class="tw sns-btn__item">
+                                        <a href="https://twitter.com/share?url=https%3A%2F%2Fheysho.com%2Fhtml5%2F&text=HTML5%E3%81%A7SEO%E5%BC%B7%E5%8C%96%E3%81%B8%EF%BC%81%E8%A6%81%E7%B4%A0%E3%82%BF%E3%82%B0section%2C+article%2C+main%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%EF%BD%9CHeysho" target="_blank" rel="nofollow noopener noreferrer">
+                                            <i class="fab fa-twitter"></i>
+                                            <span class="share_txt">ツイート</span>
+                                        </a>
+                                    </li>
+                                    <li class="fb sns-btn__item">
+                                        <a href="https://www.facebook.com/share.php?u=https%3A%2F%2Fheysho.com%2Fhtml5%2F" target="_blank" rel="nofollow noopener noreferrer">
+                                            <i class="fab fa-facebook"></i>
+                                            <span class="share_txt">シェア</span>
+                                        </a>
+                                    </li>
+                                    <li class="hatebu sns-btn__item">
+                                        <a href="http://b.hatena.ne.jp/add?mode=confirm&url=https%3A%2F%2Fheysho.com%2Fhtml5%2F&title=HTML5%E3%81%A7SEO%E5%BC%B7%E5%8C%96%E3%81%B8%EF%BC%81%E8%A6%81%E7%B4%A0%E3%82%BF%E3%82%B0section%2C+article%2C+main%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%EF%BD%9CHeysho" target="_blank" rel="nofollow noopener noreferrer">
+                                            <i class="fa fa-hatebu"></i>
+                                            <span class="share_txt">はてブ</span>
+                                        </a>
+                                    </li>
+                                    <li class="line sns-btn__item">
+                                        <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fheysho.com%2Fhtml5%2F&text=HTML5%E3%81%A7SEO%E5%BC%B7%E5%8C%96%E3%81%B8%EF%BC%81%E8%A6%81%E7%B4%A0%E3%82%BF%E3%82%B0section%2C+article%2C+main%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%EF%BD%9CHeysho" target="_blank" rel="nofollow noopener noreferrer">
+                                            <i class="fab fa-line"></i>
+                                            <span class="share_txt share_txt_line dfont">LINE</span>
+                                        </a>
+                                    </li>
+                                    <li class="pkt sns-btn__item">
+                                        <a href="http://getpocket.com/edit?url=https%3A%2F%2Fheysho.com%2Fhtml5%2F&title=HTML5%E3%81%A7SEO%E5%BC%B7%E5%8C%96%E3%81%B8%EF%BC%81%E8%A6%81%E7%B4%A0%E3%82%BF%E3%82%B0section%2C+article%2C+main%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%EF%BD%9CHeysho" target="_blank" rel="nofollow noopener noreferrer">
+                                            <i class="fab fa-get-pocket"></i>
+                                            <span class="share_txt">Pocket</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </header>
+                        <section class="entry-content cf">
+                            <div class="say left lazyload">
+                                <p class="faceicon">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="110" data-src="/wp-content/uploads/2019/05/chibi1.jpg" class="lazyload">
+                                    <noscript>
+                                        <img src="/wp-content/uploads/2019/05/chibi1.jpg" width="110" data-eio="l">
+                                    </noscript>
+                                    <span>ふきげん猫ちび</span>
+                                </p>
+                                <div class="chatting lazyload">
+                                    <div class="sc lazyload">SEOに強いWebサイトを作りたい！</div>
+                                </div>
+                            </div>
+                            <div class="say right lazyload">
+                                <div class="chatting lazyload">
+                                    <div class="sc lazyload">HTML5のタグを積極的に使うとSEOに強いサイトが作れるの？</div>
+                                </div>
+                                <p class="faceicon">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="110" data-src="/wp-content/uploads/2019/05/chibi2.jpg" class="lazyload">
+                                    <noscript>
+                                        <img src="/wp-content/uploads/2019/05/chibi2.jpg" width="110" data-eio="l">
+                                    </noscript>
+                                    <span>ふきげん猫ちび</span>
+                                </p>
+                            </div>
+                            <p>結論から言うと、HTML5の要素タグを使うとSEOに劇的に強くなります。</p>
+                            <p>要素タグというのは、&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;,&lt;article&gt;, &lt;section&gt;, &lt;aside&gt;などのレイアウトを構成するタグのことです。</p>
+                            <p>今回の記事では以下の内容について詳しく解説します。</p>
+                            <div class="li-yubi li-mainbdr main-c-before lazyload">
+                                <ul>
+                                    <li>HTML5とは？</li>
+                                    <li>HTML5要素タグを使うことによる特典：コードが整理される</li>
+                                    <li>各要素タグの使い方の解説</li>
+                                    <li>SEOに強いサイトのHTML5の使い方サンプル</li>
+                                </ul>
+                            </div>
+                            <p>ちなみに僕は６年くらいWeb制作とマーケティング（SEO中心）をWeb制作会社で担当していたので、ここら辺のことを語らせるとかなり詳しいです。</p>
+                            <p>HTML5の要素タグを上手く使うとソースコードが凄く整理されるし、Googleにコンテンツの内容を正しく伝えれるようになります。</p>
+                            <p>ただし、いくつかのタグ（main, article, section, asideなど）は使い方が若干ややこしいので注意が必要です。</p>
+                            <div class="say left lazyload">
+                                <p class="faceicon">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="110" data-src="https://heysho.com/wp-content/uploads/2018/08/guy1.png" class="lazyload">
+                                    <noscript>
+                                        <img src="https://heysho.com/wp-content/uploads/2018/08/guy1.png" width="110" data-eio="l">
+                                    </noscript>
+                                    <span>ヘイショー</span>
+                                </p>
+                                <div class="chatting lazyload">
+                                    <div class="sc lazyload">参考にしてみてください！</div>
+                                </div>
+                            </div>
+                            <div class="widget_text sponsored lazyload">
+                                <div class="textwidget custom-html-widget lazyload">
+                                    <div class="sng-box box28 lazyload">
+                                        <div class="box-title lazyload">About Me</div>
+                                        <div class="box-content lazyload">
+
+                                            ヘイショー
+                                            <small>
+                                                （
+                                                <u>
+                                                    <a href="https://twitter.com/heyshoworldwide">@heyshoworldwide</a>
+                                                </u>
+                                                ）
+                                            </small>
+                                            です。
+                                            世界を渡り歩いてきたSEO/Webマーケティングのプロです。よろしくお願い申し上げます。
+                                            <p style="text-align:left;">
+                                                <u>
+                                                    <a href="/profile/">» プロフィールへ</a>
+                                                </u>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="toc_container" class="no_bullets lazyload">
+                                <p class="toc_title">目次</p>
+                                <ul class="toc_list">
+                                    <li>
+                                        <a href="#HTML5">HTML5とは？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#HTML5-2">HTML5要素タグを使うことによる特典：コードが整理される</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#HTML5-3">HTML5の要素タグを使わない場合</a>
+                                            </li>
+                                            <li>
+                                                <a href="#HTML5-4">HTML5の要素タグを使った場合</a>
+                                            </li>
+                                            <li>
+                                                <a href="#i">考察</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#i-2">各要素タグの使い方の解説</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#main">main要素の定義</a>
+                                            </li>
+                                            <li>
+                                                <a href="#article">article要素の定義</a>
+                                            </li>
+                                            <li>
+                                                <a href="#section">section要素の定義</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#SEOWordPressStingerHTML5">SEO最強と呼ばれるWordPressテンプレート「Stinger」のHTML5要素の構造を分析してみた</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h2>
+                                <span id="HTML5">HTML5とは？</span>
+                            </h2>
+                            <div class="youtube lazyload">
+                                <p>
+                                    <iframe data-lazyloaded="1" src="about:blank" width="880" height="660" data-src="https://www.youtube.com/embed/z9dJTcnm7zA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <noscript>
+                                        <iframe width="880" height="660" src="https://www.youtube.com/embed/z9dJTcnm7zA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </noscript>
+                                </p>
+                            </div>
+                            <p>この動画で物凄く分かりやすく、簡潔にまとめられています。</p>
+                            <p>つまりHTMLのルールが変わったという話です。</p>
+                            <p>一番の目玉となる変更は、&lt;video&gt;&lt;audio&gt;などのタグを使うことによって動画や音声を直接ページに埋め込めることになったことです。</p>
+                            <p>その他いろいろなタグが追加されたのですが、SEOに関係するのは要素タグ（nav, main, article, section, aside）と呼ばれるものです。</p>
+                            <p>ちなみにWordPressのテンプレートを使う人はSEOに強いテンプレート（アフィンガー、サンゴなど）を利用すれば初めから実装されています。</p>
+                            <p>ただし自分のWebサイトを作る方は必ず覚えておいた方がよい内容です。</p>
+                            <h2>
+                                <span id="HTML5-2">HTML5要素タグを使うことによる特典：コードが整理される</span>
+                            </h2>
+                            <p>まずは実際のコードを見てみてください。</p>
+                            <h3>
+                                <span id="HTML5-3">HTML5の要素タグを使わない場合</span>
+                            </h3>
+                            <div class="pre_tag lazyload">
+                                <span>
+                                    <i class="fa fa-code"></i>
+                                     コード
+                                </span>
+                                <pre>
+                                    <code>&lt;div class="header"&gt;
+                                    	&lt;h1&gt;title&lt;/h1&gt;
+                                    	&lt;form&gt;Search&lt;/form&gt;
+                                    	&lt;div class="nav"&gt;
+                                    		&lt;ul&gt;Site navigation&lt;/ul&gt;
+                                    	&lt;/div&gt;&lt;!-- /nav --&gt;
+                                    &lt;/div&gt;&lt;!-- /header --&gt;
+
+                                    &lt;div class="main"&gt;
+                                    	&lt;div&gt;
+                                    		&lt;h1&gt;Article Title&lt;/h1&gt;
+                                    		&lt;p&gt;Summary&lt;/p&gt;
+                                    	&lt;/div&gt;
+                                    &lt;/div&gt;&lt;!-- /main --&gt;
+
+                                    &lt;div="sidebar"&gt;
+                                    	&lt;div&gt;
+                                    		&lt;h2&gt;Blogroll...&lt;/h2&gt;
+                                    	&lt;/div&gt;
+                                    &lt;/div&gt;&lt;!-- /sidebar --&gt;
+
+                                    &lt;div="footer"&gt;
+                                    	&lt;h2&gt;Footer&lt;/h2&gt;
+                                    &lt;/div&gt;&lt;!-- /footer --&gt;</code>
+                                </pre>
+                            </div>
+                            <h3>
+                                <span id="HTML5-4">HTML5の要素タグを使った場合</span>
+                            </h3>
+                            <div class="pre_tag lazyload">
+                                <span>
+                                    <i class="fa fa-code"></i>
+                                     コード
+                                </span>
+                                <pre>
+                                    <code>&lt;header&gt;
+                                    	&lt;h1&gt;title&lt;/h1&gt;
+                                    	&lt;form&gt;Search&lt;/form&gt;
+                                    	&lt;nav&gt;
+                                    		&lt;ul&gt;Site navigation&lt;/ul&gt;
+                                    	&lt;/nav&gt;
+                                    &lt;/header&gt;
+
+                                    &lt;section&gt;
+                                    	&lt;article&gt;
+                                    		&lt;h1&gt;Article Title&lt;/h1&gt;
+                                    		&lt;p&gt;Summary&lt;/p&gt;
+                                    	&lt;/article&gt;
+                                    &lt;/section&gt;
+
+                                    &lt;aside&gt;
+                                    	&lt;section&gt;
+                                    		&lt;h2&gt;Blogroll...&lt;/h2&gt;
+                                    	&lt;/section&gt;
+                                    &lt;/aside&gt;
+
+                                    &lt;footer&gt;
+                                    	&lt;h2&gt;Footer&lt;/h2&gt;
+                                    &lt;/footer&gt;</code>
+                                </pre>
+                            </div>
+                            <h3>
+                                <span id="i">考察</span>
+                            </h3>
+                            <p>上記のサンプルソースを見てもわかるように、ソースコードが圧倒的にすっきりします。</p>
+                            <p>
+                                HTML5が登場するまでは基本Divタグで囲ってクラス名で区別していたと思いますが、ソースコード内にはどこから来ているのかわからない
+                                <span style="color: #000080;">&lt;/div&gt;</span>
+                                が大量発生していました。
+                            </p>
+                            <p>HTML5要素タグを使うと内部SEOが強くなる理由は、Googleなどの検索エンジンがサイトの構造を理解しやすいためです。</p>
+                            <p>
+                                例えばブログなどではサイドバーにあたる
+                                <span style="color: #000080;">&lt;aside&gt;</span>
+                                内のコンテンツが他ページと重複しますが、
+                                <span style="color: #000080;">&lt;aside&gt;</span>
+                                タグで囲むことによって「ここはサイドバーだよ」という情報を検索エンジンに与え、コンテンツ重複による低評価を避けることができます。
+                            </p>
+                            <p>
+                                また、
+                                <span style="color: #000080;">main</span>
+                                や
+                                <span style="color: #000080;">article</span>
+                                内に登場するH1, H2タグなども他のセクションよりも優先付けされるため、記事内のキーワードが検索エンジンにより拾われ易くなります。
+                            </p>
+                            <h2>
+                                <span id="i-2">各要素タグの使い方の解説</span>
+                            </h2>
+                            <p>
+                                上記のサンプル画像を見て分かるように、
+                                <span style="color: #000080;">&lt;header&gt;, &lt;nav&gt;, &lt;aside&gt;, &lt;footer&gt;</span>
+                                タグの使う場所は簡単に分かると思います。
+                            </p>
+                            <p>
+                                ややこしいのが
+                                <span style="color: #000080;">&lt;main&gt;, &lt;article&gt;, &lt;section&gt;</span>
+                                のポジションです。
+                            </p>
+                            <p>これは各サイトで使い方が違う事が多いので、当初は何が正しくて何が間違っているのかが判断できませんでした。</p>
+                            <p>そこで、各要素の定義付けを見ていきたいと思います。</p>
+                            <h3>
+                                <span id="main">main要素の定義</span>
+                            </h3>
+                            <ul>
+                                <li>ページ内のメインのコンテンツとなるセクションへ使用</li>
+                                <li>1ページ内に1つのみ使用</li>
+                                <li>
+                                    <span style="color: #000080;">article, aside, footer, header, nav</span>
+                                    要素の中には入れてはいけない
+                                </li>
+                            </ul>
+                            <p>
+                                <span class="labeltext main-bc">参考</span>
+                                <span style="text-decoration: underline;">
+                                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/main" target="_blank" rel="noopener">HTML の &lt;main&gt; 要素 | MSD web docs</a>
+                                </span>
+                            </p>
+                            <h3>
+                                <span id="article">article要素の定義</span>
+                            </h3>
+                            <ul>
+                                <li>そのページから切り取っても単独で成り立つセクション</li>
+                                <li>ページ内のメインのコンテンツとなるセクションへ使用</li>
+                                <li>トップページの新着情報の箇所に使う</li>
+                            </ul>
+                            <p>
+                                <span class="labeltext main-bc">参考</span>
+                                <span style="text-decoration: underline;">
+                                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/article" target="_blank" rel="noopener">&lt;article&gt;: 記事コンテンツ要素 | MSD web docs</a>
+                                </span>
+                            </p>
+                            <h3>
+                                <span id="section">section要素の定義</span>
+                            </h3>
+                            <ul>
+                                <li>その名の通り、ページ内の文章などの区切りのセクションを囲むタグ</li>
+                                <li>レイアウト目的では使用しない。レイアウト目的なら&lt;div&gt;を使用。</li>
+                                <li>
+                                    見出し（Hタグ）が無いを箇所は
+                                    <span style="color: #000080;">&lt;section&gt;</span>
+                                    を使用しない
+                                </li>
+                            </ul>
+                            <p>
+                                <span class="labeltext main-bc">参考</span>
+                                <span style="text-decoration: underline;">
+                                    <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/section" target="_blank" rel="noopener">&lt;section&gt;: 汎用セクション要素 | MSD web docs</a>
+                                </span>
+                            </p>
+                            <div class="say left lazyload">
+                                <p class="faceicon">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="110" data-src="https://heysho.com/wp-content/uploads/2018/08/guy1.png" class="lazyload">
+                                    <noscript>
+                                        <img src="https://heysho.com/wp-content/uploads/2018/08/guy1.png" width="110" data-eio="l">
+                                    </noscript>
+                                    <span>ヘイショー</span>
+                                </p>
+                                <div class="chatting lazyload">
+                                    <div class="sc lazyload">実際のWordPressテンプレートを見てみます。</div>
+                                </div>
+                            </div>
+                            <h2>
+                                <span id="SEOWordPressStingerHTML5">SEO最強と呼ばれるWordPressテンプレート「Stinger」のHTML5要素の構造を分析してみた</span>
+                            </h2>
+                            <p>
+                                <img class="aligncenter size-full wp-image-347 lazyload" src="https://heysho.com/wp-content/ewww/lazy/placeholder-600x1223.png" alt="" width="600" height="1223" data-src="https://heysho.com/wp-content/uploads/2017/12/stinger.jpg" loading="lazy" data-srcset="https://heysho.com/wp-content/uploads/2017/12/stinger.jpg 600w, https://heysho.com/wp-content/uploads/2017/12/stinger-147x300.jpg 147w, https://heysho.com/wp-content/uploads/2017/12/stinger-502x1024.jpg 502w" data-sizes="auto"/>
+                                <noscript>
+                                    <img class="aligncenter size-full wp-image-347" src="https://heysho.com/wp-content/uploads/2017/12/stinger.jpg" alt="" width="600" height="1223" srcset="https://heysho.com/wp-content/uploads/2017/12/stinger.jpg 600w, https://heysho.com/wp-content/uploads/2017/12/stinger-147x300.jpg 147w, https://heysho.com/wp-content/uploads/2017/12/stinger-502x1024.jpg 502w" sizes="(max-width: 600px) 100vw, 600px" data-eio="l"/>
+                                </noscript>
+                            </p>
+                            <p>Main, Articleの中にSectionを入れています。</p>
+                            <div class="say left lazyload">
+                                <p class="faceicon">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="110" data-src="https://heysho.com/wp-content/uploads/2018/08/guy1.png" class="lazyload">
+                                    <noscript>
+                                        <img src="https://heysho.com/wp-content/uploads/2018/08/guy1.png" width="110" data-eio="l">
+                                    </noscript>
+                                    <span>ヘイショー</span>
+                                </p>
+                                <div class="chatting lazyload">
+                                    <div class="sc lazyload">こんな感じで、他のいろいろなサイトを見て研究してみてください！</div>
+                                </div>
+                            </div>
+                            <p>以上、HTML5の要素タグについての解説でした。</p>
+                            <div class="widget_text sponsored dfont lazyload">
+                                <div class="textwidget custom-html-widget lazyload">
+                                    <div class="hide-pillar lazyload">
+                                        <span class="labeltext accent-bc">人気記事</span>
+                                        <b>
+                                            <a href="/seo/">SEO対策完全攻略ガイド</a>
+                                        </b>
+                                        <br/>
+                                    </div>
+                                    <div class="hide-cluster lazyload">
+                                        <span class="labeltext accent-bc">人気記事</span>
+                                        <b>
+                                            <a href="/technical-seo/">テクニカルSEOとは？施策一覧とおすすめツール</a>
+                                        </b>
+                                    </div>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+                        </section>
+                        <div id="entry-footer-wrapper" class="lazyload"></div>
+                        <div id="comments" class="lazyload">
+                            <h3 id="comments-title" class="h2 dfont">
+                                <span>2</span>
+                                 COMMENTS
+                            </h3>
+                            <section class="commentlist">
+                                <div id="comment-9234" class="comment even thread-even depth-1 cf lazyload">
+                                    <article class="cf">
+                                        <header class="comment-author vcard">
+                                            <img alt='' src='https://heysho.com/wp-content/ewww/lazy/placeholder-40x40.png' class='avatar avatar-40 photo avatar-default lazyload' height='40' width='40' data-src="https://secure.gravatar.com/avatar/?s=40&#038;d=mm&#038;r=g" loading="lazy" data-srcset="https://secure.gravatar.com/avatar/?s=80&#038;d=mm&#038;r=g 2x"/>
+                                            <noscript>
+                                                <img alt='' src='https://secure.gravatar.com/avatar/?s=40&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo avatar-default' height='40' width='40' data-eio="l"/>
+                                            </noscript>
+                                            <cite class="fn">匿名</cite>
+                                            <time datetime="2020-03-17">
+                                                <a href="https://heysho.com/html5/#comment-9234" rel="nofollow">3月 17, 2020</a>
+                                            </time>
+                                        </header>
+                                        <section class="comment_content cf">
+                                            <p>すごくわかりやすくて助かりました！</p>
+                                        </section>
+                                        <a rel='nofollow' class='comment-reply-link' href='https://heysho.com/html5/?replytocom=9234#respond' data-commentid="9234" data-postid="342" data-belowelement="comment-9234" data-respondelement="respond" data-replyto=" に返信" aria-label=' に返信'>返信する</a>
+                                    </article>
+                                    <div id="comment-9263" class="comment byuser comment-author-heyshoworldwide bypostauthor odd alt depth-2 cf lazyload">
+                                        <article class="cf">
+                                            <header class="comment-author vcard">
+                                                <img alt="" class="avatar avatar-40 photo avatar-default lazyload" height="40" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3C/svg%3E" width="40" data-src="https://heysho.com/wp-content/uploads/2021/01/profile_200x200-1-40x40.jpg" loading="lazy">
+                                                <noscript>
+                                                    <img alt="" class="avatar avatar-40 photo avatar-default" height="40" src="https://heysho.com/wp-content/uploads/2021/01/profile_200x200-1-40x40.jpg" width="40" data-eio="l">
+                                                </noscript>
+                                                <cite class="fn">世界のヘイショー</cite>
+                                                <time datetime="2020-04-4">
+                                                    <a href="https://heysho.com/html5/#comment-9263" rel="nofollow">4月 4, 2020</a>
+                                                </time>
+                                            </header>
+                                            <section class="comment_content cf">
+                                                <p>お役に立てて光栄です(^__^)</p>
+                                            </section>
+                                            <a rel='nofollow' class='comment-reply-link' href='https://heysho.com/html5/?replytocom=9263#respond' data-commentid="9263" data-postid="342" data-belowelement="comment-9263" data-respondelement="respond" data-replyto="世界のヘイショー に返信" aria-label='世界のヘイショー に返信'>返信する</a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </section>
+                            <div id="respond" class="comment-respond lazyload">
+                                <h3 id="reply-title" class="comment-reply-title">
+                                    コメントを残す 
+                                    <small>
+                                        <a rel="nofollow" id="cancel-comment-reply-link" href="/html5/#respond" style="display:none;">コメントをキャンセル</a>
+                                    </small>
+                                </h3>
+                                <form action="https://heysho.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+                                    <p class="comment-notes">
+                                        <span id="email-notes">メールアドレスが公開されることはありません。</span>
+                                    </p>
+                                    <p class="comment-form-comment">
+                                        <label for="comment">コメント</label>
+                                        <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>
+                                    </p>
+                                    <p class="comment-form-author">
+                                        <label for="author">名前</label>
+                                        <input id="author" name="author" type="text" value="" size="30" maxlength="245"/>
+                                    </p>
+                                    <p class="comment-form-email">
+                                        <label for="email">メール</label>
+                                        <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes"/>
+                                    </p>
+                                    <p class="comment-form-url">
+                                        <label for="url">サイト</label>
+                                        <input id="url" name="url" type="url" value="" size="30" maxlength="200"/>
+                                    </p>
+                                    <p class="comment-form-cookies-consent">
+                                        <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"/>
+                                        <label for="wp-comment-cookies-consent">次回のコメントで使用するためブラウザーに自分の名前、メールアドレス、サイトを保存する。</label>
+                                    </p>
+                                    <p class="form-submit">
+                                        <input name="submit" type="submit" id="submit" class="submit" value="コメントを送信"/>
+                                        <input type='hidden' name='comment_post_ID' value='342' id='comment_post_ID'/>
+                                        <input type='hidden' name='comment_parent' id='comment_parent' value='0'/>
+                                    </p>
+                                    <p style="display: none;">
+                                        <input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="8718b295c7"/>
+                                    </p>
+                                    <input type="hidden" id="ak_js" name="ak_js" value="213"/>
+                                    <textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+                                </form>
+                            </div>
+                        </div>
+                        <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":"https://heysho.com/html5/","headline":"HTML5でSEO強化へ！要素タグsection, article, mainの使い方","image":{"@type":"ImageObject","url":"https://heysho.com/wp-content/uploads/2017/12/html.jpg","width":640,"height":360},"datePublished":"2019-08-31T08:52:52+0900","dateModified":"2021-01-17T16:01:42+0900","author":{"@type":"Person","name":"ヘイショー"},"publisher":{"@type":"Organization","name":"","logo":{"@type":"ImageObject","url":""}},"description":"コーディング初心者やテクニカルSEO担当のために、SEOに強いHTML5でのコーディング方法について詳しく解説します。概要説明、メリット、実際のサイトのサンプルなどもお見せします。"}</script>
+                    </article>
+                    <div class="prnx_box cf lazyload">
+                        <a href="https://heysho.com/ux-research/" class="prnx pr">
+                            <p>
+                                <i class="fas fa-angle-left"></i>
+                                 前の記事
+                            </p>
+                            <div class="prnx_tb lazyload">
+                                <figure>
+                                    <img width="160" height="160" src="https://heysho.com/wp-content/ewww/lazy/placeholder-160x160.png" class="attachment-thumb-160 size-thumb-160 wp-post-image lazyload" alt="UXリサーチのプロセス" data-src="https://heysho.com/wp-content/uploads/2019/08/user-research-process-160x160.jpg" loading="lazy" data-srcset="https://heysho.com/wp-content/uploads/2019/08/user-research-process-160x160.jpg 160w, https://heysho.com/wp-content/uploads/2019/08/user-research-process-150x150.jpg 150w, https://heysho.com/wp-content/uploads/2019/08/user-research-process-125x125.jpg 125w" data-sizes="auto"/>
+                                    <noscript>
+                                        <img width="160" height="160" src="https://heysho.com/wp-content/uploads/2019/08/user-research-process-160x160.jpg" class="attachment-thumb-160 size-thumb-160 wp-post-image" alt="UXリサーチのプロセス" srcset="https://heysho.com/wp-content/uploads/2019/08/user-research-process-160x160.jpg 160w, https://heysho.com/wp-content/uploads/2019/08/user-research-process-150x150.jpg 150w, https://heysho.com/wp-content/uploads/2019/08/user-research-process-125x125.jpg 125w" sizes="(max-width: 160px) 100vw, 160px" data-eio="l"/>
+                                    </noscript>
+                                </figure>
+                                <span class="prev-next__text">UXリサーチとは？プロセス、効果、実例を紹介</span>
+                            </div>
+                        </a>
+                        <a href="https://heysho.com/popular-bloggers/" class="prnx nx">
+                            <p>
+                                次の記事 
+                                <i class="fas fa-angle-right"></i>
+                            </p>
+                            <div class="prnx_tb lazyload">
+                                <span class="prev-next__text">人気ブロガー9人を徹底分析！収益記事と手法も公開</span>
+                                <figure>
+                                    <img width="160" height="160" src="https://heysho.com/wp-content/ewww/lazy/placeholder-160x160.png" class="attachment-thumb-160 size-thumb-160 wp-post-image lazyload" alt="人気ブロガー9人を徹底分析！稼いでる記事、収益の方法も公開" data-src="https://heysho.com/wp-content/uploads/2019/09/pupular-bloggers-160x160.jpg" loading="lazy" data-srcset="https://heysho.com/wp-content/uploads/2019/09/pupular-bloggers-160x160.jpg 160w, https://heysho.com/wp-content/uploads/2019/09/pupular-bloggers-150x150.jpg 150w, https://heysho.com/wp-content/uploads/2019/09/pupular-bloggers-125x125.jpg 125w" data-sizes="auto"/>
+                                    <noscript>
+                                        <img width="160" height="160" src="https://heysho.com/wp-content/uploads/2019/09/pupular-bloggers-160x160.jpg" class="attachment-thumb-160 size-thumb-160 wp-post-image" alt="人気ブロガー9人を徹底分析！稼いでる記事、収益の方法も公開" srcset="https://heysho.com/wp-content/uploads/2019/09/pupular-bloggers-160x160.jpg 160w, https://heysho.com/wp-content/uploads/2019/09/pupular-bloggers-150x150.jpg 150w, https://heysho.com/wp-content/uploads/2019/09/pupular-bloggers-125x125.jpg 125w" sizes="(max-width: 160px) 100vw, 160px" data-eio="l"/>
+                                    </noscript>
+                                </figure>
+                            </div>
+                        </a>
+                    </div>
+                </main>
+                <div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 last-col cf lazyload" role="complementary">
+                    <aside class="insidesp">
+                        <div id="notfix" class="normal-sidebar lazyload">
+                            <div id="custom_html-2" class="widget_text widget widget_custom_html lazyload">
+                                <div class="textwidget custom-html-widget lazyload">
+                                    <div class="yourprofile lazyload">
+                                        <p class="profile-background">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://workstudyabroad.net/wp-content/uploads/2017/09/BG_profile.jpg" class="lazyload"/>
+                                            <noscript>
+                                                <img src="https://workstudyabroad.net/wp-content/uploads/2017/09/BG_profile.jpg" data-eio="l"/>
+                                            </noscript>
+                                        </p>
+                                        <p class="profile-img">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/wp-content/uploads/2021/01/profile_200x200.jpg" class="lazyload"/>
+                                            <noscript>
+                                                <img src="/wp-content/uploads/2021/01/profile_200x200.jpg" data-eio="l"/>
+                                            </noscript>
+                                        </p>
+                                        <p class="yourname dfont">ヘイショー(Heysho)</p>
+                                    </div>
+                                    <div class="profile-content lazyload">
+                                        <blockquote>海外のWebマーケティング&SEO情報を共有します｜仕事：外資系(Fortune500)のSEOマネージャー｜Web歴９年 | 趣味：書くこと、Web制作、英語、ダンス｜外部とのつながりが出来れば嬉しいです😊</blockquote>
+                                        <p style="text-align:right;">
+                                            <u>
+                                                <a href="/profile/">» プロフィール</a>
+                                            </u>
+                                            <br/>
+                                        </p>
+                                    </div>
+                                    <ul class="profile-sns dfont">
+                                        <li>
+                                            <a href="https://twitter.com/heyshoworldwide/">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/heyshoworldwide/">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://lin.ee/t1jspYt">
+                                                <i class="fab fa-line"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/japaneseseo">
+                                                <i class="fab fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="search-4" class="widget widget_search lazyload">
+                                <form role="search" method="get" id="searchform" class="searchform" action="https://heysho.com/">
+                                    <div>
+                                        <input type="search" id="s" class="searchform__input" name="s" value="" placeholder="検索"/>
+                                        <button type="submit" id="searchsubmit" class="searchform__submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="categories-4" class="widget widget_categories lazyload">
+                                <h4 class="widgettitle dfont has-fa-before">カテゴリ</h4>
+                                <ul>
+                                    <li class="cat-item cat-item-2">
+                                        <a href="https://heysho.com/category-seo/">
+                                            SEO 
+                                            <span class="entry-count dfont">36</span>
+                                        </a>
+                                        <ul class='children'>
+                                            <li class="cat-item cat-item-21">
+                                                <a href="https://heysho.com/category-seo/seo-tools/">
+                                                    SEOツール 
+                                                    <span class="entry-count dfont">9</span>
+                                                </a>
+                                            </li>
+                                            <li class="cat-item cat-item-20">
+                                                <a href="https://heysho.com/category-seo/content-seo/">
+                                                    コンテンツSEO 
+                                                    <span class="entry-count dfont">10</span>
+                                                </a>
+                                            </li>
+                                            <li class="cat-item cat-item-22">
+                                                <a href="https://heysho.com/category-seo/technical-seo/">
+                                                    テクニカルSEO 
+                                                    <span class="entry-count dfont">7</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat-item cat-item-4">
+                                        <a href="https://heysho.com/category-web-marketing/">
+                                            Webマーケティング 
+                                            <span class="entry-count dfont">18</span>
+                                        </a>
+                                        <ul class='children'>
+                                            <li class="cat-item cat-item-26">
+                                                <a href="https://heysho.com/category-web-marketing/study/">
+                                                    Webマーケティングの勉強方法 
+                                                    <span class="entry-count dfont">4</span>
+                                                </a>
+                                            </li>
+                                            <li class="cat-item cat-item-27">
+                                                <a href="https://heysho.com/category-web-marketing/types/">
+                                                    Webマーケティングの種類 
+                                                    <span class="entry-count dfont">9</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat-item cat-item-1">
+                                        <a href="https://heysho.com/category-web-design/">
+                                            Web制作 
+                                            <span class="entry-count dfont">16</span>
+                                        </a>
+                                    </li>
+                                    <li class="cat-item cat-item-11">
+                                        <a href="https://heysho.com/category-digital-tools/">
+                                            デジタルツール 
+                                            <span class="entry-count dfont">21</span>
+                                        </a>
+                                        <ul class='children'>
+                                            <li class="cat-item cat-item-13">
+                                                <a href="https://heysho.com/category-digital-tools/microsoft-teams/">
+                                                    Microsoft Teams 
+                                                    <span class="entry-count dfont">9</span>
+                                                </a>
+                                            </li>
+                                            <li class="cat-item cat-item-12">
+                                                <a href="https://heysho.com/category-digital-tools/notion/">
+                                                    Notion 
+                                                    <span class="entry-count dfont">6</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat-item cat-item-24">
+                                        <a href="https://heysho.com/category-lifehack/">
+                                            仕事術 
+                                            <span class="entry-count dfont">11</span>
+                                        </a>
+                                    </li>
+                                    <li class="cat-item cat-item-14">
+                                        <a href="https://heysho.com/category-blog-affiliate/">
+                                            副業ブログ/アフィリエイト 
+                                            <span class="entry-count dfont">16</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="text-3" class="widget widget_text lazyload">
+                                <h4 class="widgettitle dfont has-fa-before">うぇぶすくーるJP(勉強会)</h4>
+                                <div class="textwidget lazyload">
+                                    <p>
+                                        <img class="aligncenter size-medium wp-image-2696 lazyload" src="https://heysho.com/wp-content/ewww/lazy/placeholder-300x157.png" alt="" width="300" height="157" data-src="https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture-300x157.jpg" loading="lazy" data-srcset="https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture-300x157.jpg 300w, https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture-768x401.jpg 768w, https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture-1024x534.jpg 1024w, https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture-940x490.jpg 940w, https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture.jpg 1800w" data-sizes="auto"/>
+                                        <noscript>
+                                            <img class="aligncenter size-medium wp-image-2696" src="https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture-300x157.jpg" alt="" width="300" height="157" srcset="https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture-300x157.jpg 300w, https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture-768x401.jpg 768w, https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture-1024x534.jpg 1024w, https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture-940x490.jpg 940w, https://heysho.com/wp-content/uploads/2020/12/digitai-marketing-japan-group-picture.jpg 1800w" sizes="(max-width: 300px) 100vw, 300px" data-eio="l"/>
+                                        </noscript>
+                                    </p>
+                                    <p>Webマーケティングやブログに興味がある方が集まるコミュニティです（登録者数：312人）。作業会など行います。</p>
+                                    <p>
+                                        <span style="text-decoration: underline;">
+                                            <a href="https://webschool.jp">» うぇぶすくーるJP詳細ページ</a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="text-4" class="widget widget_text lazyload">
+                                <h4 class="widgettitle dfont has-fa-before">LINEで質問</h4>
+                                <div class="textwidget lazyload">
+                                    <p>
+                                        質問などあればLINEからどうぞ
+                                        <span role="image" aria-label="😊">😊</span>
+                                    </p>
+                                    <p>
+                                        <a href="https://lin.ee/t1jspYt">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="友だち追加" height="36" border="0" data-src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" class="lazyload"/>
+                                            <noscript>
+                                                <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0" data-eio="l"/>
+                                            </noscript>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fixed_sidebar" class="fixed-sidebar lazyload">
+                            <div id="toc-widget-3" class="widget toc_widget lazyload">
+                                <h4 class="widgettitle dfont has-fa-before">目次</h4>
+                                <ul class="toc_widget_list no_bullets">
+                                    <li>
+                                        <a href="#HTML5">HTML5とは？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#HTML5-2">HTML5要素タグを使うことによる特典：コードが整理される</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#HTML5-3">HTML5の要素タグを使わない場合</a>
+                                            </li>
+                                            <li>
+                                                <a href="#HTML5-4">HTML5の要素タグを使った場合</a>
+                                            </li>
+                                            <li>
+                                                <a href="#i">考察</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#i-2">各要素タグの使い方の解説</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#main">main要素の定義</a>
+                                            </li>
+                                            <li>
+                                                <a href="#article">article要素の定義</a>
+                                            </li>
+                                            <li>
+                                                <a href="#section">section要素の定義</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#SEOWordPressStingerHTML5">SEO最強と呼ばれるWordPressテンプレート「Stinger」のHTML5要素の構造を分析してみた</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div id="inner-footer" class="inner-footer wrap cf lazyload">
+                <div class="fblock first lazyload">
+                    <div class="ft_widget widget widget_categories lazyload">
+                        <h4 class="ft_title">カテゴリー</h4>
+                        <ul>
+                            <li class="cat-item cat-item-2">
+                                <a href="https://heysho.com/category-seo/">SEO</a>
+                                <ul class='children'>
+                                    <li class="cat-item cat-item-21">
+                                        <a href="https://heysho.com/category-seo/seo-tools/">SEOツール</a>
+                                    </li>
+                                    <li class="cat-item cat-item-20">
+                                        <a href="https://heysho.com/category-seo/content-seo/">コンテンツSEO</a>
+                                    </li>
+                                    <li class="cat-item cat-item-22">
+                                        <a href="https://heysho.com/category-seo/technical-seo/">テクニカルSEO</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="cat-item cat-item-4">
+                                <a href="https://heysho.com/category-web-marketing/">Webマーケティング</a>
+                                <ul class='children'>
+                                    <li class="cat-item cat-item-26">
+                                        <a href="https://heysho.com/category-web-marketing/study/">Webマーケティングの勉強方法</a>
+                                    </li>
+                                    <li class="cat-item cat-item-27">
+                                        <a href="https://heysho.com/category-web-marketing/types/">Webマーケティングの種類</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="cat-item cat-item-1">
+                                <a href="https://heysho.com/category-web-design/">Web制作</a>
+                            </li>
+                            <li class="cat-item cat-item-11">
+                                <a href="https://heysho.com/category-digital-tools/">デジタルツール</a>
+                                <ul class='children'>
+                                    <li class="cat-item cat-item-13">
+                                        <a href="https://heysho.com/category-digital-tools/microsoft-teams/">Microsoft Teams</a>
+                                    </li>
+                                    <li class="cat-item cat-item-12">
+                                        <a href="https://heysho.com/category-digital-tools/notion/">Notion</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="cat-item cat-item-24">
+                                <a href="https://heysho.com/category-lifehack/">仕事術</a>
+                            </li>
+                            <li class="cat-item cat-item-14">
+                                <a href="https://heysho.com/category-blog-affiliate/">副業ブログ/アフィリエイト</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fblock lazyload">
+                    <div class="ft_widget widget widget_recent_entries lazyload">
+                        <h4 class="ft_title">新着記事</h4>
+                        <ul class="my-widget">
+                            <li>
+                                <a href="https://heysho.com/keyword-research/">
+                                    <figure class="my-widget__img">
+                                        <img width="160" height="160" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3C/svg%3E" alt="キーワード選定とは？SEO初心者向け完全ガイド" data-src="https://heysho.com/wp-content/uploads/2021/03/keyword-research-160x160.jpg" loading="lazy" class="lazyload">
+                                        <noscript>
+                                            <img width="160" height="160" src="https://heysho.com/wp-content/uploads/2021/03/keyword-research-160x160.jpg" alt="キーワード選定とは？SEO初心者向け完全ガイド" data-eio="l">
+                                        </noscript>
+                                    </figure>
+                                    <div class="my-widget__text lazyload">キーワード選定とは？SEO初心者向け完全ガイド</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://heysho.com/web-marketing-tools/">
+                                    <figure class="my-widget__img">
+                                        <img width="160" height="160" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3C/svg%3E" alt="おすすめWebマーケティング・ツール20選【無料】" data-src="https://heysho.com/wp-content/uploads/2021/03/web-marketing-tools-160x160.jpg" loading="lazy" class="lazyload">
+                                        <noscript>
+                                            <img width="160" height="160" src="https://heysho.com/wp-content/uploads/2021/03/web-marketing-tools-160x160.jpg" alt="おすすめWebマーケティング・ツール20選【無料】" data-eio="l">
+                                        </noscript>
+                                    </figure>
+                                    <div class="my-widget__text lazyload">おすすめWebマーケティング・ツール20選【無料】</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget my_popular_posts lazyload">
+                        <h4 class="ft_title">人気記事</h4>
+                        <ul class="my-widget ">
+                            <li>
+                                <a href="https://heysho.com/how-to-use-microsoft-teams/">
+                                    <figure class="my-widget__img">
+                                        <img width="160" height="160" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3C/svg%3E" alt="Microsoft Teams(チームス)の使い方【初心者向け】" data-src="https://heysho.com/wp-content/uploads/2019/12/how-to-use-microsoft-teams-160x160.jpg" loading="lazy" class="lazyload">
+                                        <noscript>
+                                            <img width="160" height="160" src="https://heysho.com/wp-content/uploads/2019/12/how-to-use-microsoft-teams-160x160.jpg" alt="Microsoft Teams(チームス)の使い方【初心者向け】" data-eio="l">
+                                        </noscript>
+                                    </figure>
+                                    <div class="my-widget__text lazyload">
+                                    Microsoft Teams(チームス)の使い方【初心者向け】</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://heysho.com/microsoft-teams-tips/">
+                                    <figure class="my-widget__img">
+                                        <img width="160" height="160" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3C/svg%3E" alt="Microsoft Teams(チームス)運用のコツ【2年間のノウハウ】" data-src="https://heysho.com/wp-content/uploads/2019/12/microsoft-teams-reply-160x160.jpg" loading="lazy" class="lazyload">
+                                        <noscript>
+                                            <img width="160" height="160" src="https://heysho.com/wp-content/uploads/2019/12/microsoft-teams-reply-160x160.jpg" alt="Microsoft Teams(チームス)運用のコツ【2年間のノウハウ】" data-eio="l">
+                                        </noscript>
+                                    </figure>
+                                    <div class="my-widget__text lazyload">
+                                    Microsoft Teams(チームス)運用のコツ【2年間のノウハウ】</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fblock last lazyload">
+                    <div class="widget_text ft_widget widget widget_custom_html lazyload">
+                        <div class="textwidget custom-html-widget lazyload">
+                            <a class="twitter-timeline" data-lang="ja" data-height="600" href="https://twitter.com/heyshoworldwide?ref_src=twsrc%5Etfw">Tweets by heyshoworldwide</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-menu" class="lazyload">
+                <div>
+                    <a class="footer-menu__btn dfont" href="https://heysho.com/">
+                        <i class="fas fa-home"></i>
+                         HOME
+                    </a>
+                </div>
+                <nav>
+                    <a class="privacy-policy-link" href="https://heysho.com/privacy-policy/">利用規約</a>
+                </nav>
+                <p class="copyright dfont">
+                &copy; 2021            Heysho            All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script type='text/javascript' id='wp-polyfill-js-after'>
+    ('fetch' in window) || document.write('<script src="https://heysho.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>');
+    (document.contains) || document.write('<script src="https://heysho.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>');
+    (window.DOMRect) || document.write('<script src="https://heysho.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>');
+    (window.URL && window.URL.prototype && window.URLSearchParams) || document.write('<script src="https://heysho.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>');
+    (window.FormData && window.FormData.prototype.keys) || document.write('<script src="https://heysho.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>');
+    (Element.prototype.matches && Element.prototype.closest) || document.write('<script src="https://heysho.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>');
+    </script>
+    <script type='text/javascript' id='lodash-js-after'>
+    window.lodash = _.noConflict();
+    </script>
+    <script type='text/javascript' id='wp-api-fetch-js-translations'>
+    (function(domain, translations) {
+        var localeData = translations.locale_data[domain] || translations.locale_data.messages;
+        localeData[""].domain = domain;
+        wp.i18n.setLocaleData(localeData, domain);
+    })("default", {
+        "translation-revision-date": "2021-01-30 05:49:07+0000",
+        "generator": "GlotPress\/3.0.0-alpha.2",
+        "domain": "messages",
+        "locale_data": {
+            "messages": {
+                "": {
+                    "domain": "messages",
+                    "plural-forms": "nplurals=1; plural=0;",
+                    "lang": "ja_JP"
+                },
+                "You are probably offline.": ["\u73fe\u5728\u30aa\u30d5\u30e9\u30a4\u30f3\u306e\u3088\u3046\u3067\u3059\u3002"],
+                "Media upload failed. If this is a photo or a large image, please scale it down and try again.": ["\u30e1\u30c7\u30a3\u30a2\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u306b\u5931\u6557\u3057\u307e\u3057\u305f\u3002 \u5199\u771f\u307e\u305f\u306f\u5927\u304d\u306a\u753b\u50cf\u306e\u5834\u5408\u306f\u3001\u7e2e\u5c0f\u3057\u3066\u3082\u3046\u4e00\u5ea6\u304a\u8a66\u3057\u304f\u3060\u3055\u3044\u3002"],
+                "An unknown error occurred.": ["\u4e0d\u660e\u306a\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002"],
+                "The response is not a valid JSON response.": ["\u8fd4\u7b54\u304c\u6b63\u3057\u3044 JSON \u30ec\u30b9\u30dd\u30f3\u30b9\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002"]
+            }
+        },
+        "comment": {
+            "reference": "wp-includes\/js\/dist\/api-fetch.js"
+        }
+    });
+    </script>
+    <script type='text/javascript' id='wp-api-fetch-js-after'>
+    wp.apiFetch.use(wp.apiFetch.createRootURLMiddleware("https://heysho.com/wp-json/"));
+    wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware("f55d528c97");
+    wp.apiFetch.use(wp.apiFetch.nonceMiddleware);
+    wp.apiFetch.use(wp.apiFetch.mediaUploadMiddleware);
+    wp.apiFetch.nonceEndpoint = "https://heysho.com/wp-admin/admin-ajax.php?action=rest-nonce";
+    </script>
+    <script type='text/javascript' id='contact-form-7-js-extra'>
+    /*  */
+    var wpcf7 = {
+        "cached": "1"
+    };
+    /*  */
+    </script>
+    <script>
+    jQuery(function() {
+        var isIE = /MSIE|Trident/.test(window.navigator.userAgent);
+        if (!isIE)
+            return;
+        var fixed = jQuery('#fixed_sidebar');
+        var beforeFix = jQuery('#notfix');
+        var main = jQuery('#main');
+        var beforeFixTop = beforeFix.offset().top;
+        var fixTop = fixed.offset().top;
+        var mainTop = main.offset().top;
+        var w = jQuery(window);
+        var adjust = function() {
+            var fixHeight = fixed.outerHeight(true);
+            var fixWidth = fixed.outerWidth(false);
+            var beforeFixHeight = beforeFix.outerHeight(true);
+            var mainHeight = main.outerHeight();
+            var winHeight = w.height();
+            var scrollTop = w.scrollTop();
+            var fixIdleBottom = winHeight + (scrollTop - mainHeight - mainTop);
+            if (fixTop + fixHeight >= mainTop + mainHeight)
+                return;
+            if (scrollTop + fixHeight > mainTop + mainHeight) {
+                fixed.removeClass('sidefixed');
+                fixed.addClass('sideidled');
+                fixed.css({
+                    'bottom': fixIdleBottom
+                });
+                return
+            }
+            if (scrollTop >= fixTop - 25) {
+                fixed.addClass('sidefixed');
+                fixed.css({
+                    'width': fixWidth,
+                    'bottom': 'auto'
+                });
+                return
+            }
+            fixed.removeClass('sidefixed sideidled');
+            fixTop = fixed.offset().top
+        };
+        w.on('scroll', adjust)
+    });
+    </script>
+    <script>
+    jQuery(function() {
+        function fetchEntryFooter() {
+            jQuery.ajax({
+                url: 'https://heysho.com/wp-admin/admin-ajax.php',
+                dataType: 'html',
+                data: {
+                    'action': 'fetch_entry_footer_content',
+                    'id': 342
+                },
+                success: function(data) {
+                    jQuery('#entry-footer-wrapper').html(data)
+                }
+            })
+        }
+        setTimeout(function() {
+            fetchEntryFooter()
+        }, 1500)
+    });
+    </script>
+    <script data-optimized="1" src="https://heysho.com/wp-content/litespeed/cssjs/ca2c8.js?040d3" defer></script>
+</body>
+</html>
+<!-- Page optimized by LiteSpeed Cache @2021-03-12 05:06:37 -->
+<!-- Page generated by LiteSpeed Cache 3.6.3 on 2021-03-12 14:06:37 -->
+

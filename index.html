@@ -2,297 +2,172 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>フリーランス研究者のサイト</title>
 
-    <link rel="stylesheet" href="Css/style.css">
-    <link rel="stylesheet" href="Css/header.css">
-    <link rel="stylesheet" href="Css/mainvisual.css">
-    <link rel="stylesheet" href="Css/about.css">
-    <link rel="stylesheet" href="Css/news.css">
-    <link rel="stylesheet" href="Css/works.css">
-    <link rel="stylesheet" href="Css/footer.css">
-    <link rel="stylesheet" href="Css/response.css">
-    <link rel="stylesheet" href="Css/access.css">
+    <title>大学物理化学を学ぶ | 物理化学の入り口</title>
+    <meta name="description" content="物理化学の試験対策に向けた内容や、卒業研究などに役立つ情報を掲載しております。主に大学生の方が対象ではございますが、わかりやすく要点をおさえた内容となっておりますので高校生の方でもぜひご覧ください。">
+    <meta name="keywords" content="物理化学,大学,わかりやすく"><!-- 経過観察が必要 -->
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-
-    <!-- jquery -->
-    <script src = "./jquery-3.5.1.min.js"></script>
-
-    <script>
-        // 要素フェードイン
-        $(function(){　//$(function()｛｝はDOMの読み込みが終わったら中の処理をするという意味
-            $(window).scroll(function (){
-                $('.fadein').each(function(){
-                    var targetElement = $(this).offset().top;
-                    var scroll = $(window).scrollTop();
-                    var windowHeight = $(window).height();
-                    if (scroll + windowHeight > targetElement + 170){
-                        $(this).css('opacity','1');
-                        $(this).css('transform','translateY(0)');
-                    }
-                });
-            });
-        });
-    </script>
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class = "wrap">
-    <!---------------------------------------------------
-        ヘッダー
-    --------------------------------------------------->
-    <header>
-        <div class = "inner">
-            <h3>For My Life</h3>
+    <div class="wrap">
+        <!-- 装飾 -->
+        <div class="header-band"></div>
 
-            <div class="fa fa-bars" id="menu"></div>
-            <div class="fa fa-times" id="close"></div>
-
-            <nav>
+        <!--------------------------------------------
+            ヘッダー
+        --------------------------------------------->
+        <header class="inner">
+            <!-- サイトロゴ -->
+            <div class="site-logo">
+                <h1>
+                    <a href=""><img src="/image/site-logo.png" alt="物理化学の入り口サイトロゴです。" style="width: 40vw;"></a>
+                </h1>
+            </div><!-- site-logp -->
+            
+            <!-- ヘッダーナビ -->
+            <nav class="header-nav">
                 <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#news">NEWS</a></li>
-                    <li><a href="#works">WORKS</a></li>
-                    <li><a href="#access">ACCESS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li class="bg-grad"><a href="">トップページ</a></li>
+                    <li class="bg-grad"><a href="">あいさつ</a></li>
+                    <li class="bg-grad"><a href="">注意事項</a></li>
+                    <li class="bg-grad"><a href="">お問い合わせ</a></li>
                 </ul>
-            </nav>
+            </nav><!-- header-nav -->
+        </header>
 
-        </div>
-    </header>
+        <!--------------------------------------------------------------->
 
-    <!---------------------------------------------------
-        メインビジュアル
-    --------------------------------------------------->
+        <div class="main-container inner">
+        <!--------------------------------------------
+            サイドメニュー
+        --------------------------------------------->
+            <aside>
+                <div class="side-menu">
+                    <p class="bg-grad">物理・物理化学を嗜む</p>
+                    <ul>
+                        <li><a href=""><span>◆</span>おすすめ書籍</a></li>
+                        <li><a href=""><span>◆</span>雑談</a></li>
+                        <li><a href=""><span>◆</span>更新履歴</a></li>
+                    </ul>
+                </div>
 
-    <section class = "mainvisual">
-        <div class="inner">
-                <h2>科学とは何か<br><span>〜宇宙が作り出した芸術〜</span></h2>
-        </div>
-
-        <script>
-            $(function(){　//$(function()｛｝はDOMの読み込みが終わったら中の処理をするという意味
-                $("h2").css('opacity','1');
-                $("h2").css('transform','translateY(0)');
-            });
-        </script>
-
-        <div id="mask"></div>
-
-        <div id="side-menu">
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#news">NEWS</a></li>
-                <li><a href="#works">WORKS</a></li>
-                <li><a href="#access">ACCESS</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </div>
-
-        <script>
-            // メニューバークリック時
-            $("#menu").click(function() {
-                $("#mask").css("display", "block");
-                $("#side-menu").slideDown();
-
-                // スイッチャ
-                $("#menu").css("display", "none");
-                $("#close").css("display", "block");
-            });
-
-            // 閉じるボタンクリック時
-            $("#close").click(function() {
-                $("#mask").css("display", "none");
-                $("#side-menu").slideUp();
-
-                // スイッチャ
-                $("#menu").css("display", "block");
-                $("#close").css("display", "none");
-            });
-
-            // 項目クリック時
-            $("a").click(function() {
-                $("#side-menu").slideUp();
-                $("#mask").css("display", "none");
-
-                // スイッチャ
-                $("#menu").css("display", "block");
-                $("#close").css("display", "none");
-            });
-        </script>
-
-    </section>
-
-    <!---------------------------------------------------
-        ABOUT
-    --------------------------------------------------->
-
-    <a name = "about"></a>
-    <section class = "about">
-        <div class = "inner">
-            <h2>ABOUT</h2>
-            <div class = "line"></div>
-            <p><i><b>
-                「重要なのは、疑問を持ち続けること。知的好奇心は、
-                
-                それ自体に存在意義があるものだ。（ Alvert Einstein ）」<br>
-            </b></i>
-                
-            <br>
-                
-                答えを求めて、自分で道を拓くことを忘れてはないか…<br>
-
-                ここは、自然界の不思議に熱き思いを持つ者が集まる場所。<br>
-
-                そして、オンライン上にひっそりと佇む<span>研究所</span>。<br>
-
-                興味をもった方は、ぜひ当研究所のドアをノックしてみてください。<br>
-            </p>
-        </div>
-    </section>
+                <!-- 広告 -->
+                <div class="ad" style="display: none;">
+                    <h4 style="display: none;">ad</h4>
+                </div><!-- ad -->
+            </aside>
     
-    <!---------------------------------------------------
-        NEWS
-    --------------------------------------------------->
-
-    <a name = "news"></a>
-    <section class = "news">
-        <div class = "inner">
-            <h2>NEWS</h2>
-            <div class = "line"></div>
-            <ul>
-                <li>
-                    <div class="date">
-                        <p>2020.12.22</p>
-                    </div>
-                    <div class="content">
-                        <p>当サイトの作成日</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">
-                        <p>2021.2.5</p>
-                    </div>
-                    <div class="content">
-                        <p>当サイトの全面改装</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">
-                        <p>2021.2.12</p>
-                    </div>
-                    <div class="content">
-                        <p>内容更新</p>
-                    </div>
-                </li>
-
-            </ul>
+        <!--------------------------------------------
+            メイン
+        --------------------------------------------->
+            <main>
+                <!-- メインビジュアル -->
+                <img src="/image/site-image.jpeg" alt="試験や研究の助けになる物理化学の知識" class="main-visual">
+    
+                <!-- コンテンツ -->
+                <section class="contents-section">
+                    <h2 class="bg-grad">物理化学の基礎と発展</h2>
+                    <dl class="contents-container">
+                        <article>
+                            <div class="content-box">
+                                <img src="/image/therm.png" alt="熱力学の項目です">
+                                <div class="title-box">
+                                    <dt><h3>熱力学</h3></dt>
+                                    <dd>作成中です。<br>しばらくお待ち下さい。</dd>
+                                </div>
+                            </div><!-- content-box -->
+                        </article>
+                        <article>
+                            <div class="content-box">
+                                <img src="/image/kinetic.png" alt="反応速度論の項目です">
+                                <div class="title-box">
+                                    <dt><h3>反応速度論</h3></dt>
+                                    <dd>作成中です。<br>しばらくお待ち下さい。</dd>
+                                </div>
+                            </div><!-- content-box -->
+                        </article>
+                        <article>
+                            <div class="content-box">
+                                <img src="/image/quantum.png" alt="量子論の項目です">
+                                <div class="title-box">
+                                    <dt><h3>量子論</h3></dt>
+                                    <dd>作成中です。<br>しばらくお待ち下さい。</dd>
+                                </div>
+                            </div><!-- content-box -->
+                        </article>
+                        <article>
+                            <div class="content-box">
+                                <img src="/image/analysis.png" alt="分光分析学の項目です">
+                                <div class="title-box">
+                                    <dt><h3>分光分析学</h3></dt>
+                                    <dd>作成中です。<br>しばらくお待ち下さい。</dd>
+                                </div>
+                            </div><!-- content-box -->
+                        </article>
+                        <article>
+                            <div class="content-box">
+                                <img src="/image/organo.png" alt="量子有機化学の項目です">
+                                <div class="title-box">
+                                    <dt><h3>量子有機化学</h3></dt>
+                                    <dd>作成中です。<br>しばらくお待ち下さい。</dd>
+                                </div>
+                            </div><!-- content-box -->
+                        </article>
+                        <article>
+                            <div class="content-box">
+                                <img src="/image/macromol.png" alt="高分子科学の項目です">
+                                <div class="title-box">
+                                    <dt><h3>高分子科学</h3></dt>
+                                    <dd>作成中です。<br>しばらくお待ち下さい。</dd>
+                                </div>
+                            </div><!-- content-box -->
+                        </article>
+                        <article>
+                            <div class="content-box">
+                                <img src="/image/statistic.png" alt="基礎の数学の項目です">
+                                <div class="title-box">
+                                    <dt><h3>基礎数学</h3></dt>
+                                    <dd>作成中です。<br>しばらくお待ち下さい。</dd>
+                                </div>
+                            </div><!-- content-box -->
+                        </article>
+                        <article>
+                            <div class="content-box">
+                                <img src="/image/program.png" alt="コンピュータに関する項目です">
+                                <div class="title-box">
+                                    <dt><h3>シミュレーション</h3></dt>
+                                    <dd>作成中です。<br>しばらくお待ち下さい。</dd>
+                                </div>
+                            </div><!-- content-box -->
+                        </article>     
+                    </dl><!-- contents-container -->
+                </section><!-- contents-section -->
+            </main>
         </div>
-    </section>
 
-    <!---------------------------------------------------
-        WORKS
-    --------------------------------------------------->
+        <!--------------------------------------------------------------->
 
-    <a name = "works"></a>
-    <section class = "works">
-        <div class = "inner">
-            <h2>WORKS</h2>
-            <div class = "line"></div>
-                <div class = "works-box">
-                    <!-- 1列目 -->
-                    <div class = "works-card-wrapper">
-                        <div class = "work-card fadein">
-                            <a href="#">
-                                <img src="image/mathematics-2.jpg" alt="">
-                            </a>
-                            <h3>Mathematics</h3>
-                        </div>
-                        <div class = "work-card fadein">
-                            <a href="#">
-                                <img src="image/physics-3.jpg" alt="">
-                            </a>
-                            <h3>Physics</h3>
-                        </div>
-                        <div class = "work-card fadein">
-                            <a href="chem.html">
-                                <img src="image/chem-1.jpg" alt="">
-                            </a>
-                            <h3>Chemistry</h3>
-                        </div>
-                    </div>
-                    <!-- 2列目 -->
-                    <div class = "works-card-wrapper">
-                        <div class = "work-card fadein">
-                            <a href="#">
-                                <img src="image/simulation-1.jpg" alt="">
-                            </a>
-                            <h3>Simulation programming</h3>
-                        </div>
-                        <div class = "work-card fadein">
-                            <a href="#">
-                                <img src="image/design-1.jpg" alt="">
-                            </a>
-                            <h3>Design</h3>
-                        </div>
-                        <div class = "work-card fadein">
-                            <a href="#">
-                                <img src="image/lifeHack-1.jpg" alt="">
-                            </a>
-                            <h3>Life hack</h3>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>
-
-    <!---------------------------------------------------
-        ACCESS
-    --------------------------------------------------->
-
-    <a name = "access"></a>
-    <section class="access">
-        <div class="inner">
-            <h2>ACCESS</h2>
+        <!--------------------------------------------
+            フッター
+        --------------------------------------------->
+        <footer class="inner">
+            <!-- フッターナビ -->
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href=""><span>●</span>トップページ</a></li>
+                    <li><a href=""><span>●</span>あいさつ</a></li>
+                    <li><a href=""><span>●</span>注意事項</a></li>
+                    <li><a href=""><span>●</span>お問い合わせ</a></li>
+                </ul>
+            </nav><!-- footer-nav -->
+            
             <div class="line"></div>
-            <div class="access-container">
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16124.617939752558!2d133.91492367089938!3d34.65751434899138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554064c3de389d3%3A0xa2d703aa2239cf57!2z5bKh5bGx6aeF!5e0!3m2!1sja!2sjp!4v1613112865744!5m2!1sja!2sjp"></iframe>
-                </div>
-                <div class="address">
-                    <div class="txt-box">
-                        <h3>研究所の入り口</h3>
-                        <div class="line" style="width: 100%;"></div>
-                        <!--TEL-->
-                        <p>TEL : 000-0000-000</p>
-                        <br>
-                        <!--Address-->
-                        <p>〒012-3456</p>
-                        <p>岡山県岡山市北区元町0-0-0</p>
-                        <br>
-                        <p>最寄り駅(岡山駅)から徒歩5分</p>
-                        <p>営業時間：9:00~18:00</p>
-                        <p>定休日：火曜日</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!---------------------------------------------------
-        CONTACT
-    --------------------------------------------------->
-    <!---------------------------------------------------
-        フッター
-    --------------------------------------------------->
-
-    <footer>
-        <p><small>©2021 For My Life</small></p>
-    </footer>
+            <p>Copyright 2021 Daigo, All Rights Reserved.</p>
+        </footer>
     </div>
-
 </body>
 </html>
