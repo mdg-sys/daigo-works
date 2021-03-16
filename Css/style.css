@@ -61,7 +61,7 @@ img {
 }
 
 .bg-grad {
-  background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(#008cff));
+  /* background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(#008cff)); */
   background: -webkit-linear-gradient(top, skyblue, #008cff);
   background: linear-gradient(to bottom, skyblue, #008cff);
 }
@@ -118,7 +118,7 @@ img {
 }
 
 .header-nav ul a:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(skyblue), to(#008cff));
+  /* background: -webkit-gradient(linear, left bottom, left top, from(skyblue), to(#008cff)); */
   background: -webkit-linear-gradient(bottom, skyblue, #008cff);
   background: linear-gradient(to top, skyblue, #008cff);
 }
