@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/*-------------------------------------
+    全体構造
+-------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  color: #666666;
+}
+
+p, a {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #666666;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.line {
+  padding: 1px 0;
+  margin: 20px 0 5px 0;
+  background-color: skyblue;
+}
+
+.inner {
+  width: 80vw;
+  margin: 20px auto;
+}
+
+.header-band {
+  padding: 3px;
+  background-color: skyblue;
+}
+
+.bg-grad {
+  /* background: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(#008cff)); */
+  background: -webkit-linear-gradient(top, skyblue, #008cff);
+  background: linear-gradient(to bottom, skyblue, #008cff);
+}
+
+/*-------------------------------------
+    ヘッダー
+-------------------------------------*/
+.site-logo {
+  display: inline-block;
+}
+
+.site-logo:hover {
+  opacity: 0.5;
+}
+
+.header-nav {
+  margin-top: 20px;
+}
+
+.header-nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.header-nav ul li {
+  width: 25%;
+  height: 50px;
+  background-color: skyblue;
+  text-align: center;
+  border: solid #008cff;
+  border-width: 2px 2px 2px 0;
+}
+
+.header-nav ul li:first-child {
+  border-radius: 6px 0 0 6px;
+  border-width: 2px;
+}
+
+.header-nav ul li:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.header-nav ul a {
+  color: white;
+  display: block;
+  line-height: 50px;
+}
+
+.header-nav ul a:hover {
+  /* background: -webkit-gradient(linear, left bottom, left top, from(skyblue), to(#008cff)); */
+  background: -webkit-linear-gradient(bottom, skyblue, #008cff);
+  background: linear-gradient(to top, skyblue, #008cff);
+}
+
+/*-------------------------------------
+    サイドメニュー
+-------------------------------------*/
+.side-menu {
+  width: 20vw;
+  margin-right: 20px;
+}
+
+.side-menu p {
+  padding: 15px 0 15px 1rem;
+  color: white;
+  background-color: skyblue;
+  border-radius: 6px 6px 0 0;
+}
+
+.side-menu ul {
+  background-color: white;
+  padding-bottom: 10px;
+  border: 1.5px solid skyblue;
+}
+
+.side-menu li {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  border-bottom: 1.5px solid skyblue;
+}
+
+.side-menu a {
+  line-height: 50px;
+  display: block;
+}
+
+.side-menu a:hover {
+  opacity: 0.5;
+}
+
+.side-menu span {
+  color: skyblue;
+  padding-right: 5px;
+}
+
+/*-------------------------------------
+    メイン
+-------------------------------------*/
+.main-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main h2 {
+  text-align: center;
+  color: white;
+}
+
+main .main-visual {
+  width: 100%;
+  height: 33vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.contents-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+article {
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  width: 50%;
+  margin-bottom: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+article:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.content-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-box img {
+  width: 100px;
+  height: 100px;
+}
+
+.title-box {
+  margin-left: 20px;
+}
+
+/*-------------------------------------
+    フッター
+-------------------------------------*/
+.footer-nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: skyblue;
+  border-radius: 6px;
+}
+
+.footer-nav ul a {
+  color: white;
+  margin-right: 20px;
+}
+
+.footer-nav ul a:first-child {
+  margin-left: 20px;
+}
+
+.footer-nav ul a:hover {
+  color: #c2ff73;
+}
+
+footer p {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
